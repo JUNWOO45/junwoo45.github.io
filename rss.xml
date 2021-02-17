@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[박준우 블로그]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://junwoo45.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 17 Feb 2021 16:02:43 GMT</lastBuildDate><item><title><![CDATA[<번역>DRY가 먹히지 않으면, WET하게]]></title><description><![CDATA[이 글을 Nick Bull의 When DRY Doesn’t Work, Go WET을 번역한 글입니다. 원문은 When DRY Doesn’t Work, Go WET{:target=”_blank”} 에서 확인하실 수 있습니다. DRY…]]></description><link>https://junwoo45.github.io/2020-11-17-repeat-yourself/</link><guid isPermaLink="false">https://junwoo45.github.io/2020-11-17-repeat-yourself/</guid><pubDate>Tue, 17 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[박준우 블로그]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://junwoo45.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 17 Feb 2021 16:03:52 GMT</lastBuildDate><item><title><![CDATA[<번역>DRY가 먹히지 않으면, WET하게]]></title><description><![CDATA[이 글을 Nick Bull의 When DRY Doesn’t Work, Go WET을 번역한 글입니다. 원문은 When DRY Doesn’t Work, Go WET{:target=”_blank”} 에서 확인하실 수 있습니다. DRY…]]></description><link>https://junwoo45.github.io/2020-11-17-repeat-yourself/</link><guid isPermaLink="false">https://junwoo45.github.io/2020-11-17-repeat-yourself/</guid><pubDate>Tue, 17 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;이 글을 Nick Bull의 When DRY Doesn’t Work, Go WET을 번역한 글입니다.&lt;/p&gt;
 &lt;p&gt;원문은 &lt;a href=&quot;https://medium.com/better-programming/when-dry-doesnt-work-go-wet-6befda0444bf&quot;&gt;When DRY Doesn’t Work, Go WET&lt;/a&gt;{:target=”_blank”} 에서 확인하실 수 있습니다.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -97,11 +97,42 @@
 &lt;h2&gt;결국엔…&lt;/h2&gt;
 &lt;p&gt;파라미터를 전달하거나 추가적인 조건문들이 코드 내부에서 동작하고 있다면, 여러분의 추상화는 잘못된 것입니다.&lt;/p&gt;
 &lt;p&gt;잘못된 추상화보다는 복제를 선호하세요.&lt;/p&gt;
-&lt;p&gt;읽어주셔서 감사합니다!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[<번역>시니어 개발자처럼 VSCode 사용하기]]></title><description><![CDATA[이 글을 bitfish의 Use VSCode Like a Senior Developer을 번역한 글입니다. 원문은 Use VSCode Like a Senior Developer{:target=”_blank”} 에서 확인하실 수 있습니다. vscod…]]></description><link>https://junwoo45.github.io/2020-09-02-use-vscode-like-a-senior-developer/</link><guid isPermaLink="false">https://junwoo45.github.io/2020-09-02-use-vscode-like-a-senior-developer/</guid><pubDate>Wed, 02 Sep 2020 11:11:11 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;읽어주셔서 감사합니다!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[<번역>시니어 개발자처럼 VSCode 사용하기]]></title><description><![CDATA[이 글을 bitfish의 Use VSCode Like a Senior Developer을 번역한 글입니다. 원문은 Use VSCode Like a Senior Developer{:target=”_blank”} 에서 확인하실 수 있습니다.  Photo…]]></description><link>https://junwoo45.github.io/2020-09-02-use-vscode-like-a-senior-developer/</link><guid isPermaLink="false">https://junwoo45.github.io/2020-09-02-use-vscode-like-a-senior-developer/</guid><pubDate>Wed, 02 Sep 2020 11:11:11 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;이 글을 bitfish의 Use VSCode Like a Senior Developer을 번역한 글입니다.&lt;/p&gt;
 &lt;p&gt;원문은 &lt;a href=&quot;https://levelup.gitconnected.com/use-vscode-like-a-senior-developer-9b54054c452a&quot;&gt;Use VSCode Like a Senior Developer&lt;/a&gt;{:target=”_blank”} 에서 확인하실 수 있습니다.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;../VSCode1.jpeg&quot; alt=&quot;vscod1&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f7dc325b1b64d1f3ea8daeef5c0105d1/d165a/VSCode1.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.45569620253164%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAEDBAX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABy0xJyuTX/8QAFxABAQEBAAAAAAAAAAAAAAAAARACA//aAAgBAQABBQKc3IX/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPwGq/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8BiP/EABYQAAMAAAAAAAAAAAAAAAAAABAgIf/aAAgBAQAGPwIVP//EABgQAQEBAQEAAAAAAAAAAAAAAAEAERAx/9oACAEBAAE/ISZCPHby3n//2gAMAwEAAgADAAAAEGMP/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARMf/aAAgBAwEBPxADyMX/xAAWEQEBAQAAAAAAAAAAAAAAAAABADH/2gAIAQIBAT8QUbM//8QAGRAAAwEBAQAAAAAAAAAAAAAAAAERITFR/9oACAEBAAE/EETTraYkeaeIMS5Ebyyyn//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;vscod1&quot;
+        title=&quot;vscod1&quot;
+        src=&quot;/static/f7dc325b1b64d1f3ea8daeef5c0105d1/828fb/VSCode1.jpg&quot;
+        srcset=&quot;/static/f7dc325b1b64d1f3ea8daeef5c0105d1/ff44c/VSCode1.jpg 158w,
+/static/f7dc325b1b64d1f3ea8daeef5c0105d1/a6688/VSCode1.jpg 315w,
+/static/f7dc325b1b64d1f3ea8daeef5c0105d1/828fb/VSCode1.jpg 630w,
+/static/f7dc325b1b64d1f3ea8daeef5c0105d1/0ede0/VSCode1.jpg 945w,
+/static/f7dc325b1b64d1f3ea8daeef5c0105d1/3ac88/VSCode1.jpg 1260w,
+/static/f7dc325b1b64d1f3ea8daeef5c0105d1/d165a/VSCode1.jpg 1400w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;small&gt;Photo by &lt;a href=&quot;https://unsplash.com/@pankajpatel&quot;&gt;Pankaj Patel&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/&quot;&gt;Unsplash&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
 &lt;p&gt;VSCode는 인기있는 코드 에디터 중 하나이며, VSCode에 익숙해지며 생산성을 엄청나게 끌어올릴 수 있습니다. 이 글에서 소개하는 팁들이 도움이 되었으면 좋겠습니다.&lt;/p&gt;
 &lt;p&gt;다음과 같은 기능들을 소개할 것입니다.&lt;/p&gt;
@@ -124,7 +155,38 @@
   &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Lorem, ipsum dolor.&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;ul&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;어떻게 작업하실 생각입니까?&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../VSCode2.png&quot; alt=&quot;vscode2&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/5d4e16601e4a2a780b2be23bb9332d30/ea964/VSCode2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 44.30379746835443%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsTAAALEwEAmpwYAAABWUlEQVQoz4WR626EIBCFff+363pHBNlVVPCGujbbrtDDJm3aX52QCRC+OWeY4K7UzNjz8XCvsNavf+L7RfD8/NyV2tvW9b0ryKp0UTqSPbVsSsaqqjqOI03T6ysopeMwHOM4C/FxHMHp3K61h6V0UTTdZE5dmjpZaV7St8tlnuGMxXGMnOc5yi0wyzkkg9NaVNqaxsNJbDqdFy4KrZIdLXys6wplbIQQgLuu24YB8Ps8v+Bp2kBiZenSqoI5SmwjelFxMMYYQggMA8ZRSrnDNmPvyxJYa+9ar3Xt4DyOTNsR6sKL01JzVmZZNk1TWZYQ55zj2DTN0vcL56C88v2n5zCc6ybJXBKdrbjiaZKk27aFYQhxlMCNV1YK9R7GBOd53ofB28ZvE4KexdUVFMpG1tc8J+M41nUNGBl/hmzGcb3d9r4P0PBEKabtB3eef8dpX3c+7K/p/+y/AE058MirXY28AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;vscode2&quot;
+        title=&quot;vscode2&quot;
+        src=&quot;/static/5d4e16601e4a2a780b2be23bb9332d30/f058b/VSCode2.png&quot;
+        srcset=&quot;/static/5d4e16601e4a2a780b2be23bb9332d30/c26ae/VSCode2.png 158w,
+/static/5d4e16601e4a2a780b2be23bb9332d30/6bdcf/VSCode2.png 315w,
+/static/5d4e16601e4a2a780b2be23bb9332d30/f058b/VSCode2.png 630w,
+/static/5d4e16601e4a2a780b2be23bb9332d30/40601/VSCode2.png 945w,
+/static/5d4e16601e4a2a780b2be23bb9332d30/78612/VSCode2.png 1260w,
+/static/5d4e16601e4a2a780b2be23bb9332d30/ea964/VSCode2.png 1312w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;저는 한 곳에 &lt;code class=&quot;language-text&quot;&gt;class=&amp;quot;odd&amp;quot;&lt;/code&gt; 를 입력하고, 다른 곳에 복사-붙여넣기를 하곤 했습니다. 하지만 멀티 커서 기능을 알고난 뒤, 제 작업 효율성은 크게 증가했습니다.&lt;/p&gt;
 &lt;p&gt;특히, 키보드의 Alt 키를 누른 상태에서(macOS의 경우 Option 키), 다른 영역을 클릭하면 추가 커서가 생성됩니다. 이렇게 되면 각 커서 위치에서 동시에 타이핑을 할 수 있습니다.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/1154/1*mRmuHM9dkEyuzlYQXH4Ycw.gif&quot; alt=&quot;vscode_gif1&quot;&gt;&lt;/p&gt;
@@ -192,24 +254,177 @@
 &lt;blockquote&gt;
 &lt;h3&gt;Preferences -&gt; User Snippets&lt;/h3&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;../VSCode3.png&quot; alt=&quot;vscode3&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/29a063d96900780d74bd7141ed6486e1/105d8/VSCode3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 48.10126582278481%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAACTUlEQVQozw3QbVPSAADA8X3Orrvquq68q6uuxztLskBQxExROBrjYWMbG4yNsTEQQRwCwjYQdA8MHGkOFavz6gPE3e/t/80feL19OOe3HcgotW8kSjpRHUK5DrarUbXTEN2O8t0wK0e5Dsx3QKqOFnuBdB1kpVBWCjIS8GKzvEX33XB9I6X40HqQ6UYFjW7aIG/cXcjc/8w+Wso9ceeerfDPvfk5D/fYzT1wcvec3J1FFni4WnMRP5245UqevYdMR+Lcnbqa8ZLWckL2oooPkwNUP8oPIrwRZjUop7th+aW/8XSzOYsbDtR2kxfL1KUDv55HLj8gk3l4spG9ICtmKN2EmDZROuEOTlnRrB9fK+af7J4ZZfoxVgM+xiSkYm1nj5Hqj1TTTjcvmNYl05oQ1VF6fxwXTvCSIbTtomQX2z93ZTu7P9g5GEqd80PlHPgEK9+FwRqh+Ag5kNPAghkrWX76KCKoTOMsnu9jJQ0rqWRFo0WT2tNr6jRdHYGMihZMYAnrkfUJXBknD2z+6Fbo/833bjOtK7JmQ4VxkNFm5wJZdYvWcXGKi9dU8/cWY7iQ7hqpAitEL1GxwnktUjRA/iRa0JHykBStb5S2iE9XM7989I0nffMKmryBJu+iV29j04W44Un2PIQGfIEVJ9x2we1lVPLh8ldC2Uh118lOONfnW2dkRSfKerKs0rVBqWs3BreS9Y8SxyHWgIQR4ER7S9ixN6WuZ3Q/YwRZE+SGUH4YF0xsR42wcow/CtFysjxgahYtns7ARRPMj2I71n/yjqtHlJBzlwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;vscode3&quot;
+        title=&quot;vscode3&quot;
+        src=&quot;/static/29a063d96900780d74bd7141ed6486e1/f058b/VSCode3.png&quot;
+        srcset=&quot;/static/29a063d96900780d74bd7141ed6486e1/c26ae/VSCode3.png 158w,
+/static/29a063d96900780d74bd7141ed6486e1/6bdcf/VSCode3.png 315w,
+/static/29a063d96900780d74bd7141ed6486e1/f058b/VSCode3.png 630w,
+/static/29a063d96900780d74bd7141ed6486e1/40601/VSCode3.png 945w,
+/static/29a063d96900780d74bd7141ed6486e1/105d8/VSCode3.png 1170w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;그러면 VSCode에 다음과 같은 창이 뜰 것입니다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../VSCode4.png&quot; alt=&quot;vscode4&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d36f46d8d5ff64cfbd0b568583bc8f48/2cefc/VSCode4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 36.075949367088604%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAz0lEQVQY042O3W6EIBBGef83a/qTZptssmB1UUEBR4RBxXVtSneT3tS0PTm355sh2qKx/m43oO5dowFcmNeP6bL9dF63uG7LuoV4JW9l/0TlM5UvmTqcgelIVczMUvTXXV9FfCynBz4d1ULKWrLsvTjzvOCN0oMPSetw18GhBseVLRqrwJGqqk4JemKUZowBQAiI6HcN6K3zvLVM9AoG0kiZeoDuq7iBv5KmpzHMYxgDkrZthRDpYHfDOYd/cX8jQeq6zvM8TRhjtNb/ib/5BFznhzI7CnNYAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;vscode4&quot;
+        title=&quot;vscode4&quot;
+        src=&quot;/static/d36f46d8d5ff64cfbd0b568583bc8f48/f058b/VSCode4.png&quot;
+        srcset=&quot;/static/d36f46d8d5ff64cfbd0b568583bc8f48/c26ae/VSCode4.png 158w,
+/static/d36f46d8d5ff64cfbd0b568583bc8f48/6bdcf/VSCode4.png 315w,
+/static/d36f46d8d5ff64cfbd0b568583bc8f48/f058b/VSCode4.png 630w,
+/static/d36f46d8d5ff64cfbd0b568583bc8f48/40601/VSCode4.png 945w,
+/static/d36f46d8d5ff64cfbd0b568583bc8f48/78612/VSCode4.png 1260w,
+/static/d36f46d8d5ff64cfbd0b568583bc8f48/2cefc/VSCode4.png 1400w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;이 창에서, 이미 존재하는 설정파일을 선택한 뒤 수정할 수 있습니다. 또는 새로운 설정 파일을 생성할 수 도 있습니다.&lt;/p&gt;
 &lt;p&gt;자, 새로운 설정 파일을 만들어보죠.&lt;/p&gt;
 &lt;p&gt;만약 &lt;code class=&quot;language-text&quot;&gt;New Global Snippets file&lt;/code&gt; 을 선택하면, 전역으로 활성화되는 설정 파일이 만들어집니다.&lt;/p&gt;
 &lt;p&gt;만약 &lt;code class=&quot;language-text&quot;&gt;New Snippets file for &amp;#39;test&amp;#39;&lt;/code&gt; 를 선택하면, 해당 프로젝트에서만 활성화되는 설정 파일이 만들어 집니다.&lt;/p&gt;
 &lt;p&gt;이 프로젝트에서만 활성화되는 파일을 만들어보도록 하죠.&lt;/p&gt;
 &lt;p&gt;선택을 하고 나면, 새롭게 생성될 파일의 이름을 입력하라고 물어봅니다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../VSCode5.png&quot; alt=&quot;vscode5&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1a82d64f95c29ae03b5fb83338b00eaf/e6c84/VSCode5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 17.088607594936708%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAIAAAAcOLh5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdElEQVQI132K2wqDMBBE8///F5LdNbc+KLE1qGltTGxpkFIKgsM8nDkM64ap89e4pLy91/I6aToY1t7GS+vD/IjP/Ou8rDGV79xhN/n/c0+F9b4HQGOMEIKInHOyBkAp1TQKkCpbawmRc14PWmtEFFIOIXwAZOmnf8zRCfAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;vscode5&quot;
+        title=&quot;vscode5&quot;
+        src=&quot;/static/1a82d64f95c29ae03b5fb83338b00eaf/f058b/VSCode5.png&quot;
+        srcset=&quot;/static/1a82d64f95c29ae03b5fb83338b00eaf/c26ae/VSCode5.png 158w,
+/static/1a82d64f95c29ae03b5fb83338b00eaf/6bdcf/VSCode5.png 315w,
+/static/1a82d64f95c29ae03b5fb83338b00eaf/f058b/VSCode5.png 630w,
+/static/1a82d64f95c29ae03b5fb83338b00eaf/40601/VSCode5.png 945w,
+/static/1a82d64f95c29ae03b5fb83338b00eaf/e6c84/VSCode5.png 1148w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;좋습니다. 설정 파일을 만들었습니다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../VSCode6.png&quot; alt=&quot;vscode6&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2923ef8ad75da94356bd3f8eebc98df9/2cefc/VSCode6.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 58.86075949367089%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcUlEQVQoz42Ri27rIAyG8/5Pd6at1XpVm7RJoEBpwObWJOefdiadVdM2YyJs8tk/UC0Xfw7Ho1JKSmmtkbJv2/Z8PiuNnLp8GHZPp1PTNEKItxDjcqkwrbUhBCLKOXnyzt3Yc6DAxNM4zeP8z6d5mv4Lx7mqm/Z1taubvm4EcYq5eHKKlHRSe23YCCfeQi/hli0ymnXvehts1XWntu2MsVqbGFMs95DD1mx3ZreQC3yfxfOLfFlelgjXag1H5ql/wqIahsF75zGdSymFfOfEh+uhuTVrvV6p1XuV/XW/1VuUAHO0x43e7M2+ch+GKoBTGdEZMLYVq2u4QiT8Fm/QiYwkGUvE4cdpfIQplZBCO7S1rfFr5zrwoQQA+Z7nz/YIu5gBm2CgFg2h0CU3xOG9xA/wEDIlhsKN2ggvsABcxjJ/ZY+wJSgnGy2eBxi6cWYuDD7dE/xbmBNFgmDweFLKBM0IUQjKIeQ7OORCTLjJ+Rf2F7TrqRzdL0S1AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;vscode6&quot;
+        title=&quot;vscode6&quot;
+        src=&quot;/static/2923ef8ad75da94356bd3f8eebc98df9/f058b/VSCode6.png&quot;
+        srcset=&quot;/static/2923ef8ad75da94356bd3f8eebc98df9/c26ae/VSCode6.png 158w,
+/static/2923ef8ad75da94356bd3f8eebc98df9/6bdcf/VSCode6.png 315w,
+/static/2923ef8ad75da94356bd3f8eebc98df9/f058b/VSCode6.png 630w,
+/static/2923ef8ad75da94356bd3f8eebc98df9/40601/VSCode6.png 945w,
+/static/2923ef8ad75da94356bd3f8eebc98df9/78612/VSCode6.png 1260w,
+/static/2923ef8ad75da94356bd3f8eebc98df9/2cefc/VSCode6.png 1400w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;이 글을 읽는 사람들을 위해 GIF를 녹화했는데, 도움이 되길 바랍니다.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/1400/1*RTAgh2bcEICfxwNx4v1fHw.gif&quot; alt=&quot;vscode_gif6&quot;&gt;&lt;/p&gt;
 &lt;br&gt;
 &lt;h3&gt;설정&lt;/h3&gt;
 &lt;p&gt;설정 파일은 JSON 형식으로 쓰여집니다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../VSCode7.png&quot; alt=&quot;vscode7&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1ca544eae9bff0421c106ca7967e3d7c/2cefc/VSCode7.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 74.0506329113924%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsTAAALEwEAmpwYAAABn0lEQVQoz42Ti26jMBBF+f//a5INbTB1COZp47ENfqYDSaqtdhP1ykhI9pnrOwzZMAyU0qqq5CYhBAA4p7qOXS41Yw3u9n2/LIsEmKSc/lLWMFZVZ7UKcAFIY7T3TnBujFoWGMdxPSgllpiN8SH4h7JhGMtPFAVAVEmJJXSIEcyCNhKmlBLWiogEf71eEy58NmUX1n0U9HAgx/xzfzj9OZbdoGJKyjr04Go+MUU7fWpUUfFDXp9rjrcIIaww71hJSF3X6HlLgs7oJmcb1hu6jxp2FTCuZ1CaMcNFelhnQrSMIYntWIUvWq8wbLBzbpTzhbaCUt223hgrhF+WOww/dYMx1rTB1rkUgnrPoSBAyJTn0/Go6toZ8xRO98wrjFefCBF5boYhWBu9j9beMz9zFma5wXja4wYhsizntjUYu2mcta+ce2W+YUkIf3vTXffdqleZfYiNVDHeYSgKvtupvv+BvoDROT6cFaV8v9dN8ysYJ6yD9fL4qXCqccQitj3G629gbDST2hiD87yO5BY1/aOnzlhg5PhTjIhh5+L/9AWFe1qtb5pZsAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;vscode7&quot;
+        title=&quot;vscode7&quot;
+        src=&quot;/static/1ca544eae9bff0421c106ca7967e3d7c/f058b/VSCode7.png&quot;
+        srcset=&quot;/static/1ca544eae9bff0421c106ca7967e3d7c/c26ae/VSCode7.png 158w,
+/static/1ca544eae9bff0421c106ca7967e3d7c/6bdcf/VSCode7.png 315w,
+/static/1ca544eae9bff0421c106ca7967e3d7c/f058b/VSCode7.png 630w,
+/static/1ca544eae9bff0421c106ca7967e3d7c/40601/VSCode7.png 945w,
+/static/1ca544eae9bff0421c106ca7967e3d7c/78612/VSCode7.png 1260w,
+/static/1ca544eae9bff0421c106ca7967e3d7c/2cefc/VSCode7.png 1400w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{
  &amp;quot;html5 autocomplete&amp;quot;: {
   &amp;quot;prefix&amp;quot;: &amp;quot;html5&amp;quot;,
@@ -244,7 +459,38 @@
 &lt;p&gt;자, 우리가 설정한 내용들이 잘 동작하는 것은 확인했지만, 조금 더 추가해야 합니다. html5 자동완성 기능은 오직 HTML 파일에서만 사용가능해야하며, 자바스크립트 파일에서는 이 단축 명령어가 필요없습니다.&lt;/p&gt;
 &lt;p&gt;다행히, 설정 파일에서 스코프를 설정할 수 있습니다.&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;scope&amp;quot;: &amp;quot;html&amp;quot;&lt;/code&gt; 필드를 추가해주기만 하면 됩니다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../VSCode8.png&quot; alt=&quot;vscode8&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1e17e47cf27610fe95543ac42fbb0a7c/2cefc/VSCode8.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 79.11392405063292%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAAsTAAALEwEAmpwYAAABoklEQVQoz42S7W7TMBSGc/8XsRvgDtDED34hoW1iSFVoA8lo16Zr7Pj7+9icZGUTqBm8SizbOo/fc45daa0Joc4Za9k4i3NOCGGMOeeEmOaUTvvDMCil6CyclFKqlBLXBhfa6BjBhxBjdN7HmBLkEBMuw7yJY5r1PJlg/IV1IXhp4/deHqjpqfl5Ut1BtHv2eJJKa+99uaQq58yNSwAZ0uYgb1px24ntUW7r7sddLQaaZ/0Djt68/zpcfZLvvugPK/nx8+P1TU8tYNACWyrImWmLpZYMe6JXHTkeTuzp5KZaYrQ2A5SyDKMzAEz9SSk+9byuVdvKphHNhjeNGgZs0VLaRfkww5PUbjfW3ywhcrv14+goDUI4rRecIY/anmG8JErZes3aNigVlUIySLmUeRUSHLnKv2EMRU++2WAKnnNHCB6Hl3wZdjH1CGesN+EBercj9/fi4SEs1Pmnc0yD1C+w6ftxteJd55/rxJYsXdTZmcm/4fX6FX7D2Z/TxpYBvnDA9z1/b2OvzkehMBQ7Bcvv4TJsQtgzGbxXc575Pwxf9AvQXKGfgU57dgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;vscode8&quot;
+        title=&quot;vscode8&quot;
+        src=&quot;/static/1e17e47cf27610fe95543ac42fbb0a7c/f058b/VSCode8.png&quot;
+        srcset=&quot;/static/1e17e47cf27610fe95543ac42fbb0a7c/c26ae/VSCode8.png 158w,
+/static/1e17e47cf27610fe95543ac42fbb0a7c/6bdcf/VSCode8.png 315w,
+/static/1e17e47cf27610fe95543ac42fbb0a7c/f058b/VSCode8.png 630w,
+/static/1e17e47cf27610fe95543ac42fbb0a7c/40601/VSCode8.png 945w,
+/static/1e17e47cf27610fe95543ac42fbb0a7c/78612/VSCode8.png 1260w,
+/static/1e17e47cf27610fe95543ac42fbb0a7c/2cefc/VSCode8.png 1400w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;다시 테스트해봅시다.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/1400/1*kVR4X1ukEXMBylDoGTdMJA.gif&quot; alt=&quot;VSCode_gif9&quot;&gt;&lt;/p&gt;
@@ -257,7 +503,36 @@
 &lt;p&gt;자동 완성이 종료되었을 때, 커서는 코드의 끝에 멈춰있는 것을 볼 수 있습니다. 하지만 자동 완성 기능이 더 완전해지기 위해서는 제목이 입력되어야 합니다.&lt;/p&gt;
 &lt;p&gt;만약 자동 완성 직후, 커서가 &lt;code class=&quot;language-text&quot;&gt;&amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;&lt;/code&gt; 안에 놓여진다면 더 편하게 작업할 수 있을 겁니다.&lt;/p&gt;
 &lt;p&gt;특별한 변수인 &lt;code class=&quot;language-text&quot;&gt;$0&lt;/code&gt; 을 추가해서 이 기능을 만들 수 있습니다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../VSCode9.png&quot; alt=&quot;vscode9&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/cfdc5338d9f2ab5e014c10d2a6c89b83/f0551/VSCode9.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 135.44303797468356%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAbCAIAAADzvTiPAAAACXBIWXMAAAsTAAALEwEAmpwYAAACzklEQVQ4y51V2XLaQBD0/39LnlLlquQlcaWKB4htsMHYiENCQve5l1ary2khnGAqPlVTQizq6Z6e2eXMNM2iKB4/dZ2posiLyk1lzJSXSiLKXNUpVwgqyogUYSYzpiIiQ5KrsuKcK6UO4Lqui7Ier5PJJrlaxbtIaDa9XMZjPR1v4p+z4OI+njt8uEoXu4wx5nke8EC2bXtWVVXbNnXTGAHfBnztMoCRwk9pmwuqaQih63R+V1HSnsgGc1XVSGNFwvA5lFsht+OcMV4rVaQpNbZ0s5Gexzjv3cHL/8BN092cOH+wyO9lNNRiG/UJznUjGA6j62vhulyI/xjW4fYJwAbZS5tsXCqlRHlYLxkrKW3KEqk6xrY9BePCqubQwUM00BI9yvOicD2vLMs3WtWDm6bBlyIMZRhm83l8MyHLVXJ3F43HCmXrerZY8N0u9/2evL/3NXfCq7opGZdxkj48JLNZ7ro5TDKMSgi6XiOR9H2eJJSQv/oPzF2Kti2SBDBEfHMDDFmv/dEoGI2E4+AZzjFd54ZBLSvf+/ckew/G+EA2dMogUISoJCmzDBKaoqikxEqjFMxDb+HoKTN+jqdTUHmDQTKZsCyTr3r2jBmcKEZlGVmthGVR0ySm9evH7Mf5hfJcGMYtCy7w7Vam6XMwbMtzLAEMq6Af78Hzb19H51++K89hponi0/t7YZpZkmCuj2SjVVHEtttkOkXEt7dksZBCtO+SvWfOg6DzVtPIcgnDsIGaqnrcd7aPtn84Bh8MyzIYFl5eIuhqRaMof/WcOAWj1XCFGgY6JFA5RqKnfQncTxg+MBjYQLAE8xBeXWEbZmla7yf3jdlGcsyGsG2A4VY6n3PHUYy9zYwN1G30pkGr4VMnOAjKHvlKzdXeTLjq+/7xKfGu0xO0lFKAD7CnljweteRFMDDYS8B/lLYD27bdn8MfRXZgQgg8+9w/xh8v4RDtIrmUygAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;vscode9&quot;
+        title=&quot;vscode9&quot;
+        src=&quot;/static/cfdc5338d9f2ab5e014c10d2a6c89b83/f058b/VSCode9.png&quot;
+        srcset=&quot;/static/cfdc5338d9f2ab5e014c10d2a6c89b83/c26ae/VSCode9.png 158w,
+/static/cfdc5338d9f2ab5e014c10d2a6c89b83/6bdcf/VSCode9.png 315w,
+/static/cfdc5338d9f2ab5e014c10d2a6c89b83/f058b/VSCode9.png 630w,
+/static/cfdc5338d9f2ab5e014c10d2a6c89b83/f0551/VSCode9.png 862w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;자동 완성이 된 직후, 커서는 자동적으로 &lt;code class=&quot;language-text&quot;&gt;$0&lt;/code&gt; 에 위치할 것입니다.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/1344/1*GeBMp9i2Qp3j4s0qnkuitw.gif&quot; alt=&quot;vscode_11&quot;&gt;&lt;/p&gt;
