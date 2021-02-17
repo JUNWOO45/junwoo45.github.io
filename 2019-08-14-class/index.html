@@ -20,9 +20,69 @@ Object<span class="token punctuation">.</span><span class="token function">getPr
 <div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript">Object<span class="token punctuation">.</span><span class="token function">getPrototypeOf</span><span class="token punctuation">(</span>ex1<span class="token punctuation">)</span> <span class="token comment">// ƒ () { [native code] }</span>
 Object<span class="token punctuation">.</span><span class="token function">getPrototypeOf</span><span class="token punctuation">(</span>ex2<span class="token punctuation">)</span> <span class="token comment">// ƒ () { [native code] }</span></code></pre></div>
 <h3>function 과 class 모두 다 function [[Prototype]]을 return하고 있습니다.</h3>
-<p><img src="../img/js_class3.png" alt="class3"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a6666ab1ea23e43b847c52d0e3b151ee/99f37/js_class3.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 36.075949367088604%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAd0lEQVQY052NORLDIBAE+f87VVwLCMyiBXEJlxOH2F2TTNAzrJWagXwoORIpTGeinOcebMlRB+fwplJf5a51bsNSug7OhZRgLFirNPgQWmtbMlFxzi9TSMXFOxGx9773fGVjTw1mvX+CmHbl2sf8F/Zd1swYP2w9mJOcWAFrI4wAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="class3"
+        title="class3"
+        src="/static/a6666ab1ea23e43b847c52d0e3b151ee/f058b/js_class3.png"
+        srcset="/static/a6666ab1ea23e43b847c52d0e3b151ee/c26ae/js_class3.png 158w,
+/static/a6666ab1ea23e43b847c52d0e3b151ee/6bdcf/js_class3.png 315w,
+/static/a6666ab1ea23e43b847c52d0e3b151ee/f058b/js_class3.png 630w,
+/static/a6666ab1ea23e43b847c52d0e3b151ee/40601/js_class3.png 945w,
+/static/a6666ab1ea23e43b847c52d0e3b151ee/99f37/js_class3.png 1100w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <h3>이 때, ex1과 ex2로 constructor instance를 생성해보면 다음과 같습니다.</h3>
-<p><img src="../img/js_class4.png" alt="class4"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/2a3fc2bd0cb179c82240ddfc9a4738ce/302a4/js_class4.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 51.26582278481012%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAuklEQVQoz5WS22rEMAxE8/8/2UIJm4T4EutmyXZSe+lzNzlIoJeRmEGTiOzOheCJsZRyPWFi4uW1rJvfPfyJz+t881ncO+csUQpZtapaWmt3L5/tVMxp52PlbQlf3zMjNa0568ctU2aB7XAOj6QAdiRTNk05wXBx/stERPNrmHY+AMKzwPr6GGKKJFKvh4zAhARWxI0w4s/sE+hdsZXaj1s2k8LMMUYzqzcYnhMgUa9BF/ef6QPeQFV/AUQsS1yaDtEwAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="class4"
+        title="class4"
+        src="/static/2a3fc2bd0cb179c82240ddfc9a4738ce/f058b/js_class4.png"
+        srcset="/static/2a3fc2bd0cb179c82240ddfc9a4738ce/c26ae/js_class4.png 158w,
+/static/2a3fc2bd0cb179c82240ddfc9a4738ce/6bdcf/js_class4.png 315w,
+/static/2a3fc2bd0cb179c82240ddfc9a4738ce/f058b/js_class4.png 630w,
+/static/2a3fc2bd0cb179c82240ddfc9a4738ce/40601/js_class4.png 945w,
+/static/2a3fc2bd0cb179c82240ddfc9a4738ce/302a4/js_class4.png 1080w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <h2>2. 클래스 선언</h2>
 <hr>
 <h3>es2015에서 class가 소개되기 이전엔 객체지향 디자인 패턴을 모방하기위해 <strong>생성자 함수</strong> 를 이용해 왔습니다.</h3>
@@ -92,7 +152,37 @@ Object<span class="token punctuation">.</span><span class="token function">getPr
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre></div>
 <div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> hero2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Warrior</span><span class="token punctuation">(</span><span class="token string">"gaon"</span><span class="token punctuation">,</span> <span class="token number">9999</span><span class="token punctuation">,</span> <span class="token string">"whirlwind"</span><span class="token punctuation">)</span></code></pre></div>
-<p><img src="../img/js_class5.png" alt="class5"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/36f14ab21fa5ded418e75b21c0e731ba/f3a19/js_class5.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 115.18987341772151%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAIAAACEf/j0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAB90lEQVQ4y5VUi5KbMAzM//9hr6XJJIQEMH7hhyzLpiLJtJNcpsftmBljvJZYrbzLKcfe7ZuhPY9KW6VAqYCIywbs+KnLkj3IRvxu9u1Jnc9zIVo/1voYt031PnkhU86ImUGlrJuXrVjJTBPj1B96J02ZLQoTTDRKkbVZyWwM8aJ03rjk3BO5lEK1rCmV20KlBXOhgpgqYgEoiSepQM4JOcdnMpUk4zg6oUKQwV2Dtm52gU/4/JPv/jnl4TJ1v67Nx9D8UN1FKx29R85pi9q15ooycqkgcqkAke5i/9P8LZk4bUxEud7w382fyGuoVnRnqU3IFrQy1juOnq0dR/IWSKs0CQi+ruc+YYcJ1aQFyxWh5sKvXHICIETgBaRV6pRedH5EjjGK03EaBwBYvokdQBragYtTl29j5xw0e2Ocx3tif/28QTSODLprp+PRiKksT+6vX2Elq2uv2rM4dzyhGNiS7Occ/KbI4+WStKop5tlyM5B3SRuYI/uTnV+JeJScefpK5pYahrEfdNfPPkbSGoOffRoHcs7FGIizkFNcr4h3/Zw9DnsjDlfSkpt7q7/u5OhAn6zvp7FpZNullBO7gmgTGTPCDNGkGNLMaVqw1nD9t91htQYTwhQSN1XAQXghpi134IM869ldnJOhaQ4fHz+VUqzzl+Q/hZRFRDgZnMAAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="class5"
+        title="class5"
+        src="/static/36f14ab21fa5ded418e75b21c0e731ba/f058b/js_class5.png"
+        srcset="/static/36f14ab21fa5ded418e75b21c0e731ba/c26ae/js_class5.png 158w,
+/static/36f14ab21fa5ded418e75b21c0e731ba/6bdcf/js_class5.png 315w,
+/static/36f14ab21fa5ded418e75b21c0e731ba/f058b/js_class5.png 630w,
+/static/36f14ab21fa5ded418e75b21c0e731ba/40601/js_class5.png 945w,
+/static/36f14ab21fa5ded418e75b21c0e731ba/f3a19/js_class5.png 1086w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <h2>5. 결론</h2>
 <hr>
 <p>class 재미지다..</p></section><hr/><footer><div class="bio"></div></footer></article><nav class="blog-post-nav"><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/2019-09-10-til/">← <!-- -->TIL을 1년동안 진행하며</a></li><li><a rel="next" href="/2019-09-23-deep-clone/">자바스크립트 객체 복사하기<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2021<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.com">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>

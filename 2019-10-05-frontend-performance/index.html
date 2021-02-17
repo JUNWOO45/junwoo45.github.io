@@ -35,7 +35,38 @@
 <p>이러한 데이터 구조에서는 O(1)의 복잡성을 가지며 요소에 접근할 수 있으므로, 자료의 크기에 관계없이 항상 메모리를 한 번만 호출하게 됩니다.</p>
 <p>객체와 맵은 <code class="language-text">해시 테이블</code> 이라는 자료구조를 사용하기 때문이죠.</p>
 <p>벤치마크 주소는 다음과 같습니다 : <a href="https://jsperf.com/finding-element-object-vs-map-vs-array/1">https://jsperf.com/finding-element-object-vs-map-vs-array/1</a>{:target=”_blank”}</p>
-<p><img src="../img/performance1.png" alt="performance"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/29845ff2ddd6624aafb9f382cfdc74e6/c6720/performance1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 73.41772151898735%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABYlAAAWJQFJUiTwAAAC8UlEQVQ4y22Sy28bVRTG/Z+yRqxYsKGAgE2gEmLBAhYFJLoIeahIsKC0wKJNqVoSkripsbEdZx6e93vGmfE8/OPMGFttxJGOvjv3zv3ud875erf3j7h98IQWP9l7LHnEp7L+6LtfuXXnZ3buPuDDb3/hvW/ud/mBrD+++1v37873j//DR3z541O++ukZvS9+n/HZ/RGfP5xw54nO7onN7rHN/qnL7l8OP/Q9Ds9lfeKw99xkT/CwH3JwHnBw5rO/yeca904MepphctZ/wWSmEAU+kTMnjz2qRUgczPEspcPMt1noM3LPgiqHWrLIoFzQRuhbLJKA3j+6w8wOGekuhhdRVhX5smRZloLLLosu5TsvOiyrWs6rdTYNhR9TnI4oLqb0hlcGR8fnnI5mKIbNdDzGth38wGNu61ypV6iGgq7p2JMJjq6TLjKKPCeJY7JClNoB2tcHeIcPRKFqcTFVGczmGG5AcX1Ns1pRiYqmXlHXNXXVsJK9WkqrRNGyKCilgmWxpGzk3AuJHv5B/OiY3tRwmVkBE0MUOdLDMCRNUrlQkOYJaZaQLGLZj8gsi2tR1YU8sIn20U30horJy0udv6X0tuTBYICqKNJkH32uY1omYRRK/3JqUVaLsjXfaovtqpCzpfS6dy69e3r6kmf9IV6ckaUpY+mjrmkoQux5Xkf2anQkr2QbmqZiyeNSssel6TOZezhhIvIrgiCkaZrtzzdJXg/Za2SvrbqRkseaTFZIR6qN5Uf8b6xeX7aPbbIly8WX4SogbiIhFB/++WK0nbLrOqIwIElj3MDG9V2iNCAU1alpsoiireJmtR7GoOzz5ugN3p2+vSbsjxXa4bSEsVxIpY9JEhOG8i3YWUeyEdM3gpvSO0KRPKwueEd9ix37fXoTIbyYqAzFj61tfJluFIlhsxQ/8vBDf62wtZPYplV4s+yqqbACS2Zgr4dyNrzcKgyEMBavRXLR9VwCUbkUT1airhZb1II3J96GOTfxXJ9/ASpMWavH3FXNAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="performance"
+        title="performance"
+        src="/static/29845ff2ddd6624aafb9f382cfdc74e6/f058b/performance1.png"
+        srcset="/static/29845ff2ddd6624aafb9f382cfdc74e6/c26ae/performance1.png 158w,
+/static/29845ff2ddd6624aafb9f382cfdc74e6/6bdcf/performance1.png 315w,
+/static/29845ff2ddd6624aafb9f382cfdc74e6/f058b/performance1.png 630w,
+/static/29845ff2ddd6624aafb9f382cfdc74e6/40601/performance1.png 945w,
+/static/29845ff2ddd6624aafb9f382cfdc74e6/78612/performance1.png 1260w,
+/static/29845ff2ddd6624aafb9f382cfdc74e6/c6720/performance1.png 1922w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>차이가 매우 큽니다.</p>
 <p>맵과 객체는 초당 수백만 개의 작업을 수행하지만, 배열은 최상의 결과에서조차 고작 100여개의 작업만 수행할 수 있습니다.</p>
 <p>물론 지금은 데이터 변환을 고려하지않았지만, 데이터 변환을 고려한다고 해도 여전히 맵과 객체가 빠릅니다.</p>
@@ -47,7 +78,38 @@
 <p>따라서 당신의 코드에 이렇게 사용한 코드가 있다면 수정하세요.</p>
 <p>벤치 마크에서는 세가지 방법, <code class="language-text">if문</code>, <code class="language-text">try-catch</code>, <code class="language-text">short-circuit 평가</code> 를 검사했습니다.</p>
 <p>벤치마크 주소는 다음과 같습니다 : <a href="https://jsperf.com/try-catch-vs-conditions/1">https://jsperf.com/try-catch-vs-conditions/1</a>{:target=”_blank”}</p>
-<p><img src="../img/performance2.png" alt="performance2"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/7597590b4274c68d51c3e3bf759db952/769f8/performance2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 43.0379746835443%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABYlAAAWJQFJUiTwAAABiklEQVQoz5WR20sbQRyF988slDyVQv+JNoEW4q31UbDNRehD09AaE0NUCramYqKiNaGNRdkkTRqz3Ysmu+TiXj5ntyV9MzrwcWaYH2fOYaRX6R0W//Hyvc8X5t9t8/R1lheJPNFknkg8T/hNjkhsnefJAgupz5NZn8UPRZZyu8Q3D5DmturMbcnMC2J7XVYONBLlP8QFbw9VUsd6sE/uqyR8/LuSQkwQqDgnsjVy6WMya1WkRqtNs91BNwxs65KxaQA291pnMmYqC8V9pNLJKaXKTxpdA1XTabV/0zMtHNebjuPiCL/rioy8/BFzo4xUF0byhU69o04edF33jjh4Yt44/05nt4ByVESqnjWpnv+icaHR7/dRFIXBYBAYe553K67nBnOrVyme1EJEW89E5W8/KJ/UaHZ1hsJI0zSGw+HdDUXEtUGax7WHzGqR/wn9ytfjMbZtMxY6Go2mVnZc52/CS5HwNMRMJ4yUKXyisP01SGiafXq9nlATy7Kmfq6wDdRP+KjygFk1zA0FIIxwUkffswAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="performance2"
+        title="performance2"
+        src="/static/7597590b4274c68d51c3e3bf759db952/f058b/performance2.png"
+        srcset="/static/7597590b4274c68d51c3e3bf759db952/c26ae/performance2.png 158w,
+/static/7597590b4274c68d51c3e3bf759db952/6bdcf/performance2.png 315w,
+/static/7597590b4274c68d51c3e3bf759db952/f058b/performance2.png 630w,
+/static/7597590b4274c68d51c3e3bf759db952/40601/performance2.png 945w,
+/static/7597590b4274c68d51c3e3bf759db952/78612/performance2.png 1260w,
+/static/7597590b4274c68d51c3e3bf759db952/769f8/performance2.png 1924w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p><code class="language-text">null</code> 을 체크하는 것이 항상 더 낫다는 것은 굉장히 중요한 사실입니다.</p>
 <p>또한 벤치마크를 보면 알겠지만, <code class="language-text">if문</code>과 <code class="language-text">short-circuit 평가</code> 는 성능 차이가 거의 없기때문에 더 마음에 드는 것을 사용하면 됩니다.</p>
 <br>
@@ -60,11 +122,73 @@
 <p>저는 두가지 케이스를 만들어보기로 하였습니다 : <code class="language-text">filter</code> 메소드 사용 후 <code class="language-text">map</code> 메소드를 사용하는 것과 <code class="language-text">filter</code> 메소드 사용 후 <code class="language-text">reduce</code> 메소드를 사용하는 것.</p>
 <p>각각의 케이스를 <code class="language-text">메소드 체이닝</code>, <code class="language-text">forEach</code>, <code class="language-text">기본 반복문</code> 을 사용하여 테스트해보았습니다.</p>
 <p>벤치마크 주소는 다음과 같습니다 : <a href="https://jsperf.com/array-function-chains-vs-single-loop-filter-map/1">https://jsperf.com/array-function-chains-vs-single-loop-filter-map/1</a>{:target=”_blank”}</p>
-<p><img src="../img/performance3.png" alt="performance3"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/448466c043e649933152bed4dd0d3ea9/c6720/performance3.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 57.59493670886076%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAACK0lEQVQoz32Ry08TURTG5+905UIXxo0bY5SFCwXiBo0aE59BYoRSTUwg0B0qGmPqi0JbS8s8asGhnVcfM9N2ZvrzzgWDQvUkv8zNzLlnvu87yvTCOpLMIeI8+fwNl+4vc/XJKtdmc1x+uMIVwcSjVSYe55iaf8uU6JOI843se+4tfeBB7jPK7TWdO2sGd18bPMubLHyxyHyzyRY8XhU7LJe7vNhs81KQLbgsbrgsfLVkX8q86F1cLrGSybO6tImyVf7OZqlMy7aJfI9mQ8Os7+DtN4iDNmHbIuq5EgY9SPqcqK0K9tMsrOfFQLVBoVZH3RMX4wTH87BsB9v18NodbMfF9dry2fMDBoMhwyg+IhkRllSs3DuCfBFFMx1UgbbXwhYqO50OQRAQxzGj0eiEmPRN+v43SYroPfyA8nGjTF5Iru87tFotqtUq5VIJQ1VpGIb8AX8MGFfDOELVVcJ+iFLSdknRTZt+vy/p9XqEYUgYpBYH/K9GqbQIfMdnJFqV2m6TaqMpLcciw7GXUltJMpaRyLAxrFNJimhRDWVHLCNFFQNN08QStrvCplQoSBVHUfRXbkf5JTK7eX+WC94ZZrrXUT5tbYsMt6k3HfabTSqVCrrIz9A0fui6tD8cDsdalXZFZXpznC2eYsabRCnrezJDQywl3Ww6wHVdqbJ7uHGObfaIg4gy/hznjdPc7EwdWK7tttB/WkJJ9M8Mj5/lQA4spwMv+ue45U/zC7/RdGYB/cCyAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="performance3"
+        title="performance3"
+        src="/static/448466c043e649933152bed4dd0d3ea9/f058b/performance3.png"
+        srcset="/static/448466c043e649933152bed4dd0d3ea9/c26ae/performance3.png 158w,
+/static/448466c043e649933152bed4dd0d3ea9/6bdcf/performance3.png 315w,
+/static/448466c043e649933152bed4dd0d3ea9/f058b/performance3.png 630w,
+/static/448466c043e649933152bed4dd0d3ea9/40601/performance3.png 945w,
+/static/448466c043e649933152bed4dd0d3ea9/78612/performance3.png 1260w,
+/static/448466c043e649933152bed4dd0d3ea9/c6720/performance3.png 1922w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p><code class="language-text">기본 반복문</code> 이 가장 빠르긴 하지만 차이가 커보이지는 않습니다.</p>
 <p>차이가 크지않은 이유는, <code class="language-text">map</code> 에서는 <code class="language-text">push</code> 를 하는 과정이 없기때문입니다.</p>
 <p>이제, <code class="language-text">filter</code>와 <code class="language-text">reduce</code> 를 검사해보겠습니다 : <a href="https://jsperf.com/array-function-chains-vs-single-loop-filter-reduce/1">https://jsperf.com/array-function-chains-vs-single-loop-filter-reduce/1</a>{:target=”_blank”}</p>
-<p><img src="../img/performance4.png" alt="performance4"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e4095ac5ee3fac0c194e99a3249d42d9/c6720/performance4.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 67.72151898734178%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAACc0lEQVQ4y42Sy1PTUBTG85e6lr3ufI0bRWHGwRUMQmtdIDoyIrJQFoIOM4itAqW0pWnatE1DkiZpHm1ezee5t/UxUh1P8ps59ybnm/Pde4T59T1wXuxhbn3Mg7UPuLG0ibsrW7iX3cbN5S3cWn6D20/e4s7KNh4+3538u8vzR68+YWlrH5l3eQhz7yXM7TQwvyNheV/B6sEFsoc6cvke1r5ZeHlsI1cw8YzI5U2+n/2sI8PRsHKgIbdRxMbaF7zeLEIonpVxfFpCR+kiGTjQWnVcyCIMpYl40Efk2QhdE7FvI6U1Qg9ARCRECh6FIrTVdWC/AKEkKTgR26jKKqJkBLtPoroB3ejxvO+4sOw+eqYFk2Br1/Ph+QOEQYiYNAdHVRjbHzE8LEHIl85ROKuhofbQ643xfR+uS0KWxde2bfO94XAIz/P4N4ZPeRQEJBxAabWRxDFZFmWc1GRIig6HCk3ThEM/25PcMAw4joMwDC8REUxkGAzR7Xb5niCpJhj1jk7W7HE3JBhHEf4n0jRFOhr9XAuHJ2UcHJfRvDCh6zpEUUS1UkFHlqG029wmL/oLLIIwQF2qI44jCGeNDkpSB1LX4C2zs2JWAxJyyeqPon9FEo5gaRbSmDqsdTSctzWyrHHBqZaIEdmaCk2GFqtopzLURIEgKgYYdboUY3LLg8kZRnTg/OCT5O+W6c16i7jmXsWCNwvhqCLha7nOx0ZVVVSrFciShFazCbnR4GMytfPJwyLjLmJGvIIF9z6EU7GFo2qDC7KO2OwxYaffh035n9anXUrGIcEaE5z9ZZnNYThlVH4vvJRjbPmpv4Tr3gwe+7P4DrzIC6r0fZYZAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="performance4"
+        title="performance4"
+        src="/static/e4095ac5ee3fac0c194e99a3249d42d9/f058b/performance4.png"
+        srcset="/static/e4095ac5ee3fac0c194e99a3249d42d9/c26ae/performance4.png 158w,
+/static/e4095ac5ee3fac0c194e99a3249d42d9/6bdcf/performance4.png 315w,
+/static/e4095ac5ee3fac0c194e99a3249d42d9/f058b/performance4.png 630w,
+/static/e4095ac5ee3fac0c194e99a3249d42d9/40601/performance4.png 945w,
+/static/e4095ac5ee3fac0c194e99a3249d42d9/78612/performance4.png 1260w,
+/static/e4095ac5ee3fac0c194e99a3249d42d9/c6720/performance4.png 1922w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>이번에는 차이가 더 큽니다.</p>
 <p>두 함수를 하나로 합쳤을 때(<code class="language-text">Reduce</code>와 <code class="language-text">ForEach</code>), 거의 100%의 성능향상을 보여줍니다.</p>
 <p>하지만, <code class="language-text">기본 반복문</code> 으로 변경했을 때, 속도는 비교할 수 없을 정도로 향상되었습니다.</p>
@@ -77,7 +201,38 @@
 <p>그러 이러한 반복문은 전통적으로 사용되던 <code class="language-text">기본 반복문</code> 과 비교하면 성능이 떨어집니다.</p>
 <p>이미 반복문의 성능을 알 수 있는 벤치마크들을 살펴보았지만, 새로운 벤치마크를 만들어보겠습니다 : <a href="https://jsperf.com/for-loops-in-few-different-ways/">https://jsperf.com/for-loops-in-few-different-ways/</a>{:target=”_blank”}</p>
 <p>자바스크립트 내장 함수 이외에, Lodash의 <code class="language-text">forEach</code>와 jQuery의 <code class="language-text">each</code> 도 테스트했습니다.</p>
-<p><img src="../img/performance5.png" alt="performance5"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/69bb789a4b41ecf238021e6fc86661fc/c6720/performance5.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 96.20253164556962%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAABYlAAAWJQFJUiTwAAAC/klEQVQ4y42Uy2/TQBDG/V9y5syBUwUH6AHKAQk48lIRiB5oLxVUfVAeraBNWiq1FU3aNG2SJn47dvzIy7Ed+2NnnaRVCCqWRrv2jme/38zsCg/nt/FoIYuZ+QxoPrOQ4e/Tc5uYer2GmblvmH73FXdm13H3TWrT7zeZL/P/sD2yV8t7eLa4A2F2W8SLjRJeblYwt6tg8dDAp991LOdtrJy4+FL08PnUw0rBxSqzNTZfLXh87aotHSpYyVsQtLqFo+MTFMsVOI6Drmui5zUQth30u00g6ACRz6ybztHHpMfSJMR+C0JRNFDRbZzJJkS9gSCMEJJF/XTOxqifGs3T93j0jebkFwQhXxNKiomDQglH5zVIRgMXlQpkSULdMNBsNhFFEf7nMS0TXd+HcC7XUaiq3FTL5Yv9OOaBkiS53sifKbUbNrqdDgsoGSgzlRRY1C14ngu/2+VOYRjyMWYbTDRao4CyAWSPkOwdp8iHhTJyJRFK3YaqKNBUFfV6/XrkJEnHqgbl7Ue0l36kyGeijtOaBtV0Bn4JV3b532TcmBWEQgZVCebyOrzvW5cBiwxdYsiOY6PHkBOGRMhBEHCVhDgesB+n6nf9n7hv3MZj+x6Esmohxyp8cqFCZsiapsFiuA3TRKvVYjn10B3kdPyJBz25FW3gZvEGpvRbqULK4xlTqAyQSU04ljuOOFaUiBQy5n3/F554D/C89TStMgWjBhc5sgOflZ8qGETBCHuocFIu+3HqSxsIhLtzeIzMQR4VWUO5XEaFWa1WQ7l2Dk1Xoes6XNflKWi32zwF1AH03uv1eFCxJsJzvUtkUsiRBxUmZVGYIk1CJh+yYUdQYCqeQO2SZz1IfUhVblIRGPIQNQhTbHK+2uij1hlsQMppnSNnGW6WYYuaydvGsW2OQ/mkscM2IEya03g1f8MiyrLM13lRTuksM6Uyuxzo54DkD9QMjRT+6xjSd8uy4NPlUKgqyOznsJcrcoV05EghqSMjFNqEjBQQ1t8nMIHEbijq2T/2mJMPvppWEAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="performance5"
+        title="performance5"
+        src="/static/69bb789a4b41ecf238021e6fc86661fc/f058b/performance5.png"
+        srcset="/static/69bb789a4b41ecf238021e6fc86661fc/c26ae/performance5.png 158w,
+/static/69bb789a4b41ecf238021e6fc86661fc/6bdcf/performance5.png 315w,
+/static/69bb789a4b41ecf238021e6fc86661fc/f058b/performance5.png 630w,
+/static/69bb789a4b41ecf238021e6fc86661fc/40601/performance5.png 945w,
+/static/69bb789a4b41ecf238021e6fc86661fc/78612/performance5.png 1260w,
+/static/69bb789a4b41ecf238021e6fc86661fc/c6720/performance5.png 1922w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>역시나 <code class="language-text">기본 반복문</code> 이 다른 방법보다 훨씬 빠른 것을 볼 수 있습니다.</p>
 <p>하지만 이 결과는 배열에 한정된 결과입니다.</p>
 <p>다른 상황에서는 <code class="language-text">forEach</code> 나 <code class="language-text">for...of</code> 를 사용하는 것이 좋을 수 있습니다.</p>
@@ -93,7 +248,38 @@
 <p>물론 DOM을 다룰 때 라이브러리를 사용하는 것은 나쁜 방법이 아닙니다 - 요즘엔 React나 Angular를 사용하여 동일한 작업을 수행합니다.</p>
 <p>그러나, 몇몇 사람들은 DOM에서 엘리먼트를 조작하며 자그마한 수정을 하는 등의 간단한 작업을 할때도 jQuery를 반드시 사용해야한다는 착각을 하곤 합니다.</p>
 <p>이번에는 jQuery와 내장 DOM 메소드를 비교해보는 벤치마크를 준비해보았습니다 : <a href="https://jsperf.com/native-dom-functions-vs-jquery/1">https://jsperf.com/native-dom-functions-vs-jquery/1</a>{:target=”_blank”}</p>
-<p><img src="../img/performance6.png" alt="performance6"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/42970509c983dd77470d319c0b45e4aa/813c1/performance6.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 67.72151898734178%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAAClElEQVQ4y3WSS1PTUBiG8wNd+D/cuAeHcSM4qBu2IAudkYugDgMMDKOjQBEshd5ogYS2QCVtKW0uTdIk7eOXIgzXM/PknJxJvvN+532V4el13nyOMTy9xuvJVUHmqVX6xxZ5Ob7Iqw9L9I0u0j86LywwML7E0MQvhiYvGZT1u+kNPi4lGJndQhmezzD0LcnbxRzvN06Z3NGZiOt8EmYSVeaSNWZ2z/maafb4km4wm7roMZOqM5e2eB6b4slCH0+/D6LkD1Wy+X0OCyUs2wBaEDh0PQt85xICHh7d3nPF/cyL/DNGGgMoG7t7bKb22UofUKrUsDwTw7RoGia2aeI2DVzHJeh0CcLOPULZt1o2h0WNs1oFJbGnsp09JHlQpFyr47k2TquF47r4nkfgCr5Pp9N5kG63iyMHaqpGRZeCyYMCW6k8udIZ+nmT0LIJpWD04b0GZe8u0XAdh2KhIAV1lFgizcZOhtU/SbTTU2zfpGkaNBqNa9rSuicHPabQtG32NZXCyfFly/HMAYmcxrFexQ9cXGnXkVOjuS0E0nr4SNuRRlevcbKdpJHXxBRRF8/sE9vJop2c0hKFpmVhGAaWKAukfU/er9Rczd2bBeNZjsamcedXUdJqiYx6zF6hzNl5Q5S0e2aEQfCoEbcVdvEumpQzOepaCWV9O8V6PCXRyfO31qAjxXy7RScMr5N2i/8qb7ks/2jFInqtirKytsnc8o+eKeV6HattYFhRDg1azSbtCGndl4t3I4Pk55tFL2MjLkvBSkVis5nM8Xs3S1yyWK5diAlyZ9G9yUdtwZd1L4dyBZExoSi/qzAyT1VV9Cg2kSnLP2Mk8keUqxcEoi6QiERmRLRFWeeBTN4cnqgulUpUq1X+AT3jDKy4vzNCAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="performance6"
+        title="performance6"
+        src="/static/42970509c983dd77470d319c0b45e4aa/f058b/performance6.png"
+        srcset="/static/42970509c983dd77470d319c0b45e4aa/c26ae/performance6.png 158w,
+/static/42970509c983dd77470d319c0b45e4aa/6bdcf/performance6.png 315w,
+/static/42970509c983dd77470d319c0b45e4aa/f058b/performance6.png 630w,
+/static/42970509c983dd77470d319c0b45e4aa/40601/performance6.png 945w,
+/static/42970509c983dd77470d319c0b45e4aa/78612/performance6.png 1260w,
+/static/42970509c983dd77470d319c0b45e4aa/813c1/performance6.png 2004w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>당연하게도, 가장 기본적인 메소드인 <code class="language-text">getElementById</code>와 <code class="language-text">getElementsByClassName</code> 이 DOM을 순회할 때 가장 뛰어난 성능을 보여주었습니다.</p>
 <p><code class="language-text">querySelector by id</code> 와 <code class="language-text">Advanced selector in querySelector</code> 또한 jQuery보다 빠른 성능을 보여주었습니다.</p>
 <p>오직 클래스 명으로 엘리먼트 여러개를 가져올 때 사용하는 <code class="language-text">querySelectorAll</code> 의 경우에만 jQuery보다 느렸습니다.</p>
