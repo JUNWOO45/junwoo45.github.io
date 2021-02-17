@@ -1,0 +1,311 @@
+---
+title: ES6 Map
+date: "2020-05-12"
+description: "ES6 Map을 학습해봅니다."
+---
+
+## Map 이란?
+
+ES6에서 소개된 `key-value` 형태로 저장되는, 삽입 순서도 기억하는 콜렉션입니다.
+
+<br>
+
+`Map` 객체는 생성자를 사용해야지만 생성할 수 있습니다.
+
+```typescript
+const myMap = new Map()
+```
+
+<br>
+
+`Map` 의 프로토타입을 타고 올라가다보니... `Map` 도 `Object` 의 인스턴스이군뇨..
+
+```typescript
+const m = new Map();
+const o = {};
+
+m.__proto__.__proto__ === o.__proto__	// true
+
+console.log(m instnaceof Object);	// true
+```
+
+<br>
+
+`Object` 와 `Map` 은 비슷한 것 같은데.. 왜 따로 있는 걸까요?
+
+차근차근 비교해보려고 합니다.
+
+## 생성
+
+### Object
+
+세가지 방법이 있습니다.
+
+```typescript
+// 리터럴
+const obj = {}
+
+// constructor
+const obj = new Object()
+
+// Object.prototype.create
+const obj = Object.create(null)
+```
+
+<br>
+
+`Object.prototype.create` 는 프로토타입 상속받기위해 사용하는 경우를 제외하면 거의 사용되지 않습니다.
+
+`constructor` 또한 많은 스타일가이드에서 제안하듯, 자주 사용되지 않습니다.
+
+<br>
+
+### Map
+
+`Map` 은 오직 생성자함수를 통해 만들어낼 수 있습니다.
+
+```typescript
+const myMap = new Map()
+```
+
+<br>
+
+또한 `String` 과 `Symbol` 타입만을 `key` 값으로 가질 수 있는 `object` 와 다르게, `map`은 어떠한 값이라도 `key` 값으로 사용할 수 있다는 특징이 있습니다.
+
+불리언은 물론, 심지어 객체도 됩니다..!
+
+`set` 메소드를 사용해서 `Map` 에 값을 추가할 수 있습니다.
+
+```typescript
+const myMap = new Map()
+myMap.set({}, 5)
+myMap.set(false, true)
+
+console.log(myMap) //Map(2) { {...} => 5, false => true }
+```
+
+<br>
+
+## 접근
+
+### Object
+
+dot notation 또는 bracket notation을 사용합니다.
+
+```typescript
+obj["name"] //'junwoo'
+obj.name //'junwoo'
+```
+
+<br>
+
+### Map
+
+`get` 메소드를 사용합니다.
+
+```typescript
+const myMap = new Map(["name", "junwoo"], ["age", 100])
+
+myMap.get("name")
+```
+
+<br>
+
+`Map` 은 `has` 메소드를 사용해서, 값이 있는지 없는지 불리언 값을 받을 수 있습니다.
+
+```typescript
+myMap.has("name") //true
+```
+
+<br>
+
+반면 `Object` 는 조금 번거롭습니다.
+
+```typescript
+const isExist = obj.name !== undefined //true
+
+// or
+
+const isExist = "name" in obj //true
+
+// or
+
+const isExist = obj.hasOwnProperty("name") //true
+```
+
+> `Object.prototype.hasOwnProperty` 는 프로토타입 체인을 확인하지 않아 유용합니다.
+
+<br>
+
+## 추가
+
+### Map
+
+`set` 메소드를 사용하면 됩니다.
+
+```typescript
+const myMap = new Map()
+myMap.set("name", "junwoo")
+```
+
+<br>
+
+### Object
+
+`object` 또한 마찬가지입니다.
+
+```typescript
+const obj = {}
+obj.name = "junwoo"
+```
+
+<br>
+
+## 삭제
+
+### Object
+
+built-in 메소드가 없습니다.
+
+보통 `delete` 연산자를 사용하거나 `undefined` 으로 덮어씌웁니다.
+
+```typescript
+const obj = { name: "junwoo", age: 100 }
+
+delete obj.name //{age: 100}
+
+//or
+
+obj.name = undefined
+```
+
+<br>
+
+`undefined` 으로 덮어씌우는 행위는 성능적으로 더 빠를 수 있지만, 여전히 맵핑은 살아있기때문에 `object` 를 순회하는 과정에서 실수를 할 수 있습니다.
+
+```typescript
+const obj = { name: "junwoo", age: 100, location: "guro" }
+
+obj.name = undefined
+
+for (let item in obj) {
+  console.log(item) // name, age, location
+}
+```
+
+<br>
+
+모든 값을 지우기위해서는 별도로 loop를 돌아야합니다..
+
+<br>
+
+### Map
+
+`Map` 은 특정한 값을 지우는 `delete` 메소드와 모든 값을 지우는 `clear` 메소드를 가지고 있습니다.
+
+```typescript
+const myMap = new Map(["name", "junwoo"])
+
+myMap.delete("name") // {}
+
+//or
+
+map.clear() // {}
+```
+
+<br>
+
+하나의 값을 지우는 행위는 O(1), 모든 값을 지우는 행위는 O(n)인 것은 동일합니다만, 편의성의 차이 정도가 있네요.
+
+<br>
+
+## 크기를 구하는 법
+
+### Map
+
+`size` 메소드를 사용하면 됩니다. 배열의 `length` 처럼 편합니다.
+
+```typescript
+console.log(myMap.size) // 5
+```
+
+<br>
+
+### Object
+
+built-in 메소드가 없어 조금 불편합니다.
+
+```typescript
+console.log(Object.keys(obj).length) // 5
+```
+
+<br>
+
+## 반복
+
+`Map` 은 삽입순으로 순회하며 그 순서를 보장합니다(..!)
+
+```typescript
+const myMap = new Map()
+myMap.set(0, "zero")
+myMap.set(1, "one")
+myMap.set(2, "two")
+myMap.set(3, "three")
+
+for (let [key, value] of myMap) {
+  console.log(`${key}: ${value}`)
+}
+//0: zero
+//1: one
+//2: two
+//3: three
+
+//또는..
+
+myMap.forEach((v, k) => console.log(`${key}: ${value}`))
+//0: zero
+//1: one
+//2: two
+//3: three
+```
+
+또한 `Map` 은 이터레이션 프로토콜을 만족하기때문에, 순회와 더불어 스프레드 연산자 또한 사용가능합니다.
+
+```typescript
+const myMap = new Map()
+myMap.set(0, "zero")
+myMap.set(1, "one")
+myMap.set(2, "two")
+myMap.set(3, "three")
+
+const keyArray = [...myMap.keys()] //[0, 1, 2, 3]
+const valueArray = [...myMap.values()] //["zero", "one", "two", "three"]
+```
+
+<br>
+
+### Object
+
+반면 `Object` 는 이터러블이 아니기 때문에, `for...of` 문은 사용할 수 없습니다.
+
+```typescript
+const obj = { apple: "red", mango: "yellow", orange: "orange" }
+
+for (let key in obj) {
+  console.log(`${key} :::: ${obj[key]}`)
+}
+```
+
+<br>
+
+`Map` 과 `Object` 를 비교해보았는데요.
+
+`Map` 이 더 정교한 느낌이지만.. 사용하기 낯설다라는 느낌을 계속 받았습니다.
+
+익숙함의 문제일까요?
+
+중요한 차이점이 또 있는데, JSON은 `Object` 를 지원하지만, `Map` 은 지원하지 않습니다.
+
+어마어마한 단점 같습니다;
+
+그럼에도 불구하고 순서를 보장하는 순회나, `Object` 에는 없는 built-in 메소드들이 참 매력적인 자료구조인 듯 합니다.
