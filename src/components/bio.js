@@ -41,7 +41,7 @@ const Bio = () => {
 
   return (
     <div className="bio">
-      {avatar && (
+      {/* {avatar && (
         <Image
           fixed={avatar}
           alt={author?.name || ``}
@@ -59,7 +59,7 @@ const Bio = () => {
             You should follow them on Twitter
           </a>
         </p>
-      )}
+      )} */}
     </div>
   )
 }
