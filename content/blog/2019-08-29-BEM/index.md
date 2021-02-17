@@ -20,11 +20,11 @@ description: "BEM이란 뭘까?"
 
 - header, footer, nav, main등의 컨텐츠 영역을 block으로 간주할 수 있습니다.
 
-  ![bem1](../img/css_architecture1.jpeg)
+  ![bem1](../../assets/pic/css_architecture1.jpeg)
 
 - 더 구체적으로, header block은 logo block, search form block, authorization block을 포함할 수 있습니다.
 
-  ![bem2](../img/css_architecture3.png)
+  ![bem2](../../assets/pic/css_architecture3.png)
 
 - block은 클래스의 어근을 형성하고, 항상 맨 앞에 위치합니다.
 
@@ -42,7 +42,7 @@ description: "BEM이란 뭘까?"
 - 예를 들어 위에서 보았던 block이미지에서, menu item은 menu block 바깥에서는 사용될 수 없습니다.
   따라서 각각의 메뉴아이템은 element입니다.
 
-![bem3](../img/css_architecture4.png)
+![bem3](../../assets/pic/css_architecture4.png)
 
 - 두개의 underscore로 연결하여 블럭 다음에 위치시킵니다.
 
@@ -86,13 +86,13 @@ description: "BEM이란 뭘까?"
 
 - 다음처럼 focused된 tab3를 modifiers라고 볼 수 있습니다.
 
-![bem4](../img/css_architecture5.png)
+![bem4](../../assets/pic/css_architecture5.png)
 
 ### 사용 예
 
 - 다음과 같은 버튼을 만든다고 하면,
 
-![bem5](../img/css_architecture2.jpeg)
+![bem5](../../assets/pic/css_architecture2.jpeg)
 
 ```html
 <button class="button">Normal button</button>

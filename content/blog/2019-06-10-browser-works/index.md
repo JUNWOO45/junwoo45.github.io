@@ -18,7 +18,7 @@ description: "당최 이해하기가 어려워 정리하며 곱씹어보자."
 6. 자바스크립트 해석기 : 자바스크립트 코드를 해석하고 실행합니다.
 7. 자료 저장소 : 자료를 저장하는 계층입니다.
 
-![브라우저의 주요 구성 요소](../img/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EB%8A%94%EC%96%B4%EB%96%BB%EA%B2%8C%EB%8F%99%EC%9E%91%ED%95%98%EB%8A%94%EA%B0%801.png)
+![브라우저의 주요 구성 요소](../../assets/pic/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EB%8A%94%EC%96%B4%EB%96%BB%EA%B2%8C%EB%8F%99%EC%9E%91%ED%95%98%EB%8A%94%EA%B0%801.png)
 
 <br>
 
@@ -79,7 +79,7 @@ HTML파서는 HTML마크업을 파싱트리로 변환합니다.
 
 ---
 
-![CSS파싱](../img/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EB%8A%94%EC%96%B4%EB%96%BB%EA%B2%8C%EB%8F%99%EC%9E%91%ED%95%98%EB%8A%94%EA%B0%802.png)
+![CSS파싱](../../assets/pic/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EB%8A%94%EC%96%B4%EB%96%BB%EA%B2%8C%EB%8F%99%EC%9E%91%ED%95%98%EB%8A%94%EA%B0%802.png)
 
 <br>
 

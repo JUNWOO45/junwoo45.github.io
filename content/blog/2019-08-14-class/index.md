@@ -37,11 +37,11 @@ Object.getPrototypeOf(ex2) // ƒ () { [native code] }
 
 ### function 과 class 모두 다 function [[Prototype]]을 return하고 있습니다.
 
-![class3](../img/js_class3.png)
+![class3](../../assets/pic/js_class3.png)
 
 ### 이 때, ex1과 ex2로 constructor instance를 생성해보면 다음과 같습니다.
 
-![class4](../img/js_class4.png)
+![class4](../../assets/pic/js_class4.png)
 
 ## 2. 클래스 선언
 
@@ -143,7 +143,7 @@ class Warrior extends Hero {
 const hero2 = new Warrior("gaon", 9999, "whirlwind")
 ```
 
-![class5](../img/js_class5.png)
+![class5](../../assets/pic/js_class5.png)
 
 ## 5. 결론
 

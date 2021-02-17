@@ -23,7 +23,7 @@ origin  https://github.com/USERNAME/FORK_REPO.git (fetch)
 origin  https://github.com/USERNAME/FORK_REPO.git (push)
 ```
 
-![fork1](../img/fork1.png)
+![fork1](../../assets/pic/fork1.png)
 
 2.원본 저장소의 원격 주소를 추가합니다.
 
@@ -31,7 +31,7 @@ origin  https://github.com/USERNAME/FORK_REPO.git (push)
 $ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPO.git
 ```
 
-![fork2](../img/fork2.png)
+![fork2](../../assets/pic/fork2.png)
 
 3.원본 저장소의 원격 주소가 잘 추가되었는지 확인합니다.
 
@@ -44,7 +44,7 @@ upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPO.git (fetch)
 upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPO.git (push)
 ```
 
-![fork3](../img/fork3.png)
+![fork3](../../assets/pic/fork3.png)
 
 4.원본을 fetch합니다.
 
@@ -61,7 +61,7 @@ From https://github.com/ORIGINAL_OWNER/ORIGINAL_REPO
  * [new branch]      master     -> upstream/master
 ```
 
-![fork4](../img/fork4.png)
+![fork4](../../assets/pic/fork4.png)
 
 5.upstream/master를 나의 master에 합치기
 
@@ -77,7 +77,7 @@ Fast-forward
  4 files changed, 274 insertions(+), 881 deletions(-)
 ```
 
-![fork5](../img/fork5.png)
+![fork5](../../assets/pic/fork5.png)
 
 6.나의 원격저장소에 push합니다.
 
@@ -89,4 +89,4 @@ To https://github.com/USERNAME/FORK_REPO.git
    3b10450..0a9aada  master -> master
 ```
 
-![fork6](../img/fork6.png)
+![fork6](../../assets/pic/fork6.png)

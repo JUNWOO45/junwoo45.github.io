@@ -61,7 +61,7 @@ $ git pull
 
 을 진행하면 이 에러가 발생하는데요
 
-![error image](../img/git_pull1.png)
+![error image](../../assets/pic/git_pull1.png)
 
 ### 해결
 

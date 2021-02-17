@@ -12,13 +12,13 @@ description: "이 글은 bitfish의 Use Chrome DevTools Like a Senior Frontend D
 
 자, 우리가 어떤 이유든 개발용 브라우저로 크롬을 선택했다고 치자. 그러면 디버깅을 위해 개발자 모드를 열게될 것이다.
 
-![img1](../img/devtools1.png)
+![img1](../../assets/pic/devtools1.png)
 
 <br>
 
 console 패널을 열어 결과물을 확인하거나, element 패널을 열어 DOM요소에 대한 CSS코드를 확인하기도 한다.
 
-![img2](../img/devtools2.png)
+![img2](../../assets/pic/devtools2.png)
 
 여러분은 정말 크롬 개발자도구를 이해하고 있는가? 개발자도구는 개발 생산성을 높여주는 매우 강력하지만 잘 알려지지 않는 도구들을 제공한다.
 
@@ -33,7 +33,7 @@ console 패널을 열어 결과물을 확인하거나, element 패널을 열어 
 
 또는 아래 버튼을 눌러보자.
 
-![img3](../img/devtools3.png)
+![img3](../../assets/pic/devtools3.png)
 
 그러면 Command 패널로 진입할 수 있는데, 여기서 강력한 기능들을 가지고 있는 명령어들을 사용할 수 있다.
 
@@ -63,11 +63,11 @@ console 패널을 열어 결과물을 확인하거나, element 패널을 열어 
 
 Command 메뉴를 열고 `Screenshot Capture full size screenshot` 을 실행시켜보자.
 
-![img5](../img/devtools5.png)
+![img5](../../assets/pic/devtools5.png)
 
 다음과 같이, 현재 페이지 전부를 담은 스크린샷을 얻을 수 있다.
 
-![img6](../img/devtools6.png)
+![img6](../../assets/pic/devtools6.png)
 
 이 글에선 당신의 트래픽을 위해 압축된 이미지를 올렸지만, 원본 이미지는 매우 선명하다.
 
@@ -81,7 +81,7 @@ Command 메뉴를 열고 `Screenshot Capture full size screenshot` 을 실행시
 
 다음과 같이 정확한 스크린샷을 얻을 수 있다.
 
-![img7](../img/devtools7.png)
+![img7](../../assets/pic/devtools7.png)
 
 <br>
 
@@ -94,11 +94,11 @@ Command 메뉴를 열고 `Screenshot Capture full size screenshot` 을 실행시
 "abcde".split("").reverse().join("")
 ```
 
-![img8](../img/devtools8.png)
+![img8](../../assets/pic/devtools8.png)
 
 자, 위의 코드는 문자열을 뒤집는다. 그러나 당신은 split(), reverse(), join() 메소드가 각각 무슨일을 하고, 각 단계에서 어떤 일들이 일어나고 있는지 이해하지 못한다고 치자. 그래서 위 코드를 순서대로 하나하나 실행시켜본다.
 
-![img9](../img/devtools9.png)
+![img9](../../assets/pic/devtools9.png)
 
 이러한 과정을 거친 후에야, 각각의 메소드가 어떤 결과를 리턴하는지 알게 된다.
 
@@ -106,11 +106,11 @@ Command 메뉴를 열고 `Screenshot Capture full size screenshot` 을 실행시
 
 사실, 콘솔창엔 이전 결과값을 참조하는 마법의 변수 `$_` 가 있다.
 
-![img10](../img/devtools10.png)
+![img10](../../assets/pic/devtools10.png)
 
 `$_` 는 콘솔창에서 가장 마지막으로 연산한 결과값과 같은 값을 갖는 특수한 변수이다. 당신의 코드를 편리하게 디버깅해주는 기술이다.
 
-![img11](../img/devtools11.png)
+![img11](../../assets/pic/devtools11.png)
 
 <br>
 
@@ -120,7 +120,7 @@ Command 메뉴를 열고 `Screenshot Capture full size screenshot` 을 실행시
 
 신입 개발자들은 화면을 새로고침하는 방법을 택할 수 있겠지만, 이게 여간 귀찮은 일이 아니다. 우리는 Network 패널에서 바로 디버깅해볼 수 있다.
 
-![img12](../img/devtools12.png)
+![img12](../../assets/pic/devtools12.png)
 
 - Network 패널을 연다.
 - XHR 버튼을 누른다.
@@ -143,7 +143,7 @@ gif 예시를 보자:
 
 각 스크린샷을 클릭해서 해당 시점의 네트워크 요청을 확인할 수 있다. 이러한 시각적 프레젠테이션을 통해 매 순간 어떤 네트워크 요청이 일어나고 있는지 파악할 수 있다.
 
-![img 13](../img/devtools13.png)
+![img 13](../../assets/pic/devtools13.png)
 
 <br>
 
@@ -187,13 +187,13 @@ let users = [
 ]
 ```
 
-![img14](../img/devtools14.png)
+![img14](../../assets/pic/devtools14.png)
 
 이러한 배열들은 콘솔창에서 파악하는 것이 쉽지 않다. 배열이 길어지면 길어질수록, 요소들이 복잡해지면 복잡해질수록, 이해하기 너무 어려워진다.
 
 크롬은 객체들의 배열을 표로 만들어주는 테이블 기능을 제공한다.
 
-![img15](../img/devtools15.png)
+![img15](../../assets/pic/devtools15.png)
 
 <br>
 
@@ -223,7 +223,7 @@ Elements 패널에서 div 위치를 드래그하면, 웹 페이지의 div 위치
 
 하나의 요소에 대해 여러 개의 가상 클래스를 작성할 수 있으며, 이러한 스타일을 쉽게 테스트하기 위해 Elements 패널에서 가상 클래스를 직접 작동시킬 수 있다.
 
-![img16](../img/devtools16.png)
+![img16](../../assets/pic/devtools16.png)
 
 ### 예시
 

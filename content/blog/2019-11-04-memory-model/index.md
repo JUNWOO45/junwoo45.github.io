@@ -61,7 +61,7 @@ let myNumber = 23
 2. 메모리에 주소를 할당합니다.(런타임에 할당될 것입니다.)
 3. 생성된 주소에 값(value)을 저장합니다(23).
 
-![memory1](../img/memory1.jpeg)
+![memory1](../../assets/pic/memory1.jpeg)
 
 <br>
 
@@ -83,7 +83,7 @@ let newVar = myNumber
 
 즉, "newVar는 이제 23과 같습니다."라는 말과 같은 의미인거죠.
 
-![memory2](../img/memory2.jpeg)
+![memory2](../../assets/pic/memory2.jpeg)
 
 <center><small>myNumber는 메모리 주소 “0012CCGWH80”와 같으므로 newVar에 myNumber를 할당하면, 메모리 주소 “0012CCGWH80”이 newVar에  할당됩니다.</small></center>
 
@@ -113,7 +113,7 @@ myNumber = myNumber + 1
 
 <br>
 
-![memory3](../img/memory3.jpeg)
+![memory3](../../assets/pic/memory3.jpeg)
 
 <br>
 
@@ -130,7 +130,7 @@ myString = myString + "d"
 
 자바스크립트의 문자열은 원시 타입이기때문에, `abc` 가 `d` 와 연결될 때 새로운 메모리 주소가 할당되고, 문자열 `abcd` 는 그 메모리 주소에 저장되고, `myString` 이라는 변수는 그 새로운 메모리 주소를 가리킵니다.
 
-![memory4](../img/memory4.jpeg)
+![memory4](../../assets/pic/memory4.jpeg)
 
 <br>
 
@@ -144,7 +144,7 @@ myString = myString + "d"
 
 이번 포스팅의 목적 상, 자바스크립트의 메모리 모델은 콜스택과 힙이라는 명확히 구분된 두가지 영역으로만 이루어져있다고 생각해봅시다.
 
-![memory5](../img/memory5.jpeg)
+![memory5](../../assets/pic/memory5.jpeg)
 
 <br>
 
@@ -152,7 +152,7 @@ myString = myString + "d"
 
 우리가 지금까지 예시를 들었던, 변수를 선언했을 때의 상황들을 대략적인 표현을 그림으로 보자면 다음과 같습니다.
 
-![memory6](../img/memory6.jpeg)
+![memory6](../../assets/pic/memory6.jpeg)
 
 <br>
 
@@ -199,9 +199,9 @@ let Array = []
 
 <br>
 
-![memory7](../img/memory7.jpeg)
+![memory7](../../assets/pic/memory7.jpeg)
 
-![memory8](../img/memory8.jpeg)
+![memory8](../../assets/pic/memory8.jpeg)
 
 <br>
 
@@ -217,7 +217,7 @@ myArray.pop()
 
 <br>
 
-![memory9](../img/memory9.jpeg)
+![memory9](../../assets/pic/memory9.jpeg)
 
 <br>
 
@@ -272,7 +272,7 @@ importantID = 100 // TypeError: Assignment to constant variable
 
 변수 `importantID` 는 메모리 주소와 같다는 점을 잊지마세요.
 
-![memory10](../img/memory10.jpeg)
+![memory10](../../assets/pic/memory10.jpeg)
 
 <br>
 
@@ -282,7 +282,7 @@ importantID = 100 // TypeError: Assignment to constant variable
 
 `const` 를 사용해서 변수를 선언했다는 의미는 `importantID` 의 ID가 변하는 것을 원하지 않았다는 뜻이기에, 위 상황은 우리가 원하는 대로 동작하고 있다고 볼 수 있습니다.
 
-![memory11](../img/memory11.jpeg)
+![memory11](../../assets/pic/memory11.jpeg)
 
 <center>
   <small>
@@ -326,9 +326,9 @@ const myArray = []
 
 시각화하면 다음과 같습니다.
 
-![memory12](../img/memory12.jpeg)
+![memory12](../../assets/pic/memory12.jpeg)
 
-![memory13](../img/memory13.jpeg)
+![memory13](../../assets/pic/memory13.jpeg)
 
 <br>
 
@@ -344,7 +344,7 @@ myArray.push(5)
 
 <br>
 
-![memory14](../img/memory14.jpeg)
+![memory14](../../assets/pic/memory14.jpeg)
 
 <br>
 
@@ -370,7 +370,7 @@ myArray = 3
 
 그러나 `myArray` 는 `const` 로 선언되었기 때문에 이러한 과정은 허용되지 않습니다.
 
-![memory15](../img/memory15.jpeg)
+![memory15](../../assets/pic/memory15.jpeg)
 
 <br>
 
@@ -386,7 +386,7 @@ myArray = ["a"]
 
 그런 다음 콜스택 메모리 주소를 `myArray` 에 할당하려 하면, 오류가 발생합니다.
 
-![memory16](../img/memory16.jpeg)
+![memory16](../../assets/pic/memory16.jpeg)
 
 <br>
 

@@ -18,15 +18,15 @@ RxJS를 조금씩 공부하고 있습니다.
 
 : 주어진 subscription 함수를 옵저버블로 만듭니다.
 
-![create1](../img/observable_creation10.png)
+![create1](../../assets/pic/observable_creation10.png)
 
 이렇게 error를 만나면, 다음 next는 옵저버에게 전달되지않고 종료된다.
 
-![create2](../img/observable_creation11.png)
+![create2](../../assets/pic/observable_creation11.png)
 
 complete에게는 value값을 넘길 수 없구나..
 
-![create3](../img/observable_creation12.png)
+![create3](../../assets/pic/observable_creation12.png)
 
 <br>
 
@@ -38,19 +38,19 @@ complete에게는 value값을 넘길 수 없구나..
 
 배열의 요소 하나하나가 next메소드를 통해 옵저버에게 전달된다.
 
-![from1](../img/observable_creation5.png?lastModify=1578993382)
+![from1](../../assets/pic/observable_creation5.png?lastModify=1578993382)
 
 완료가 되면 옵저버에게는 complete notification이 전달 되고, 실행된다.
 
-![from1-1](../img/observable_creation8.png?lastModify=1578993382)
+![from1-1](../../assets/pic/observable_creation8.png?lastModify=1578993382)
 
 #### 2. Observable from promise
 
-![from2](../img/observable_creation6.png?lastModify=1578993382)
+![from2](../../assets/pic/observable_creation6.png?lastModify=1578993382)
 
 #### 3. Observable from collection
 
-![from3](../img/observable_creation7.png?lastModify=1578993382)
+![from3](../../assets/pic/observable_creation7.png?lastModify=1578993382)
 
 <br>
 
@@ -58,7 +58,7 @@ complete에게는 value값을 넘길 수 없구나..
 
 :DOM 이벤트를 옵저버블로 바꿔줍니다.
 
-![fromEvent](../img/observable_creation9.png?lastModify=1578993382)
+![fromEvent](../../assets/pic/observable_creation9.png?lastModify=1578993382)
 
 <br>
 
@@ -66,7 +66,7 @@ complete에게는 value값을 넘길 수 없구나..
 
 :정해진 시간 간격으로 숫자를 생성해낸다.
 
-![interval](../img/observable_creation3.png)
+![interval](../../assets/pic/observable_creation3.png)
 
 <br>
 
@@ -74,7 +74,7 @@ complete에게는 value값을 넘길 수 없구나..
 
 :전달된 값들을 생성해낸다.
 
-![of](../img/observable_creation2.png)
+![of](../../assets/pic/observable_creation2.png)
 
 <br>
 
@@ -84,7 +84,7 @@ complete에게는 value값을 넘길 수 없구나..
 
 jsbin에서 실행해보았다.
 
-![range](../img/observable_creation1.png)
+![range](../../assets/pic/observable_creation1.png)
 
 <br>
 
@@ -94,7 +94,7 @@ jsbin에서 실행해보았다.
 
 아래는 2초뒤부터, 500ms 시간마다 숫자를 생성해낸 모습.
 
-![timer](../img/observable_creation4.png)
+![timer](../../assets/pic/observable_creation4.png)
 
 <br>
 
