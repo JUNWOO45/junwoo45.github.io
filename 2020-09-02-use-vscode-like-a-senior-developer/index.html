@@ -5,7 +5,7 @@
 <p>이 글을 bitfish의 Use VSCode Like a Senior Developer을 번역한 글입니다.</p>
 <p>원문은 <a href="https://levelup.gitconnected.com/use-vscode-like-a-senior-developer-9b54054c452a">Use VSCode Like a Senior Developer</a>{:target=”_blank”} 에서 확인하실 수 있습니다.</p>
 </blockquote>
-<p><img src="../img/VSCode1.jpeg" alt="vscod1"></p>
+<p><img src="../VSCode1.jpeg" alt="vscod1"></p>
 <p><small>Photo by <a href="https://unsplash.com/@pankajpatel">Pankaj Patel</a> on <a href="https://unsplash.com/">Unsplash</a></small></p>
 <p>VSCode는 인기있는 코드 에디터 중 하나이며, VSCode에 익숙해지며 생산성을 엄청나게 끌어올릴 수 있습니다. 이 글에서 소개하는 팁들이 도움이 되었으면 좋겠습니다.</p>
 <p>다음과 같은 기능들을 소개할 것입니다.</p>
@@ -28,7 +28,7 @@
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>Lorem, ipsum dolor.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span></code></pre></div>
 <p>어떻게 작업하실 생각입니까?</p>
-<p><img src="../img/VSCode2.png" alt="vscode2"></p>
+<p><img src="../VSCode2.png" alt="vscode2"></p>
 <p>저는 한 곳에 <code class="language-text">class=&quot;odd&quot;</code> 를 입력하고, 다른 곳에 복사-붙여넣기를 하곤 했습니다. 하지만 멀티 커서 기능을 알고난 뒤, 제 작업 효율성은 크게 증가했습니다.</p>
 <p>특히, 키보드의 Alt 키를 누른 상태에서(macOS의 경우 Option 키), 다른 영역을 클릭하면 추가 커서가 생성됩니다. 이렇게 되면 각 커서 위치에서 동시에 타이핑을 할 수 있습니다.</p>
 <p><img src="https://miro.medium.com/max/1154/1*mRmuHM9dkEyuzlYQXH4Ycw.gif" alt="vscode_gif1"></p>
@@ -96,24 +96,24 @@
 <blockquote>
 <h3>Preferences -> User Snippets</h3>
 </blockquote>
-<p><img src="../img/VSCode3.png" alt="vscode3"></p>
+<p><img src="../VSCode3.png" alt="vscode3"></p>
 <p>그러면 VSCode에 다음과 같은 창이 뜰 것입니다.</p>
-<p><img src="../img/VSCode4.png" alt="vscode4"></p>
+<p><img src="../VSCode4.png" alt="vscode4"></p>
 <p>이 창에서, 이미 존재하는 설정파일을 선택한 뒤 수정할 수 있습니다. 또는 새로운 설정 파일을 생성할 수 도 있습니다.</p>
 <p>자, 새로운 설정 파일을 만들어보죠.</p>
 <p>만약 <code class="language-text">New Global Snippets file</code> 을 선택하면, 전역으로 활성화되는 설정 파일이 만들어집니다.</p>
 <p>만약 <code class="language-text">New Snippets file for &#39;test&#39;</code> 를 선택하면, 해당 프로젝트에서만 활성화되는 설정 파일이 만들어 집니다.</p>
 <p>이 프로젝트에서만 활성화되는 파일을 만들어보도록 하죠.</p>
 <p>선택을 하고 나면, 새롭게 생성될 파일의 이름을 입력하라고 물어봅니다.</p>
-<p><img src="../img/VSCode5.png" alt="vscode5"></p>
+<p><img src="../VSCode5.png" alt="vscode5"></p>
 <p>좋습니다. 설정 파일을 만들었습니다.</p>
-<p><img src="../img/VSCode6.png" alt="vscode6"></p>
+<p><img src="../VSCode6.png" alt="vscode6"></p>
 <p>이 글을 읽는 사람들을 위해 GIF를 녹화했는데, 도움이 되길 바랍니다.</p>
 <p><img src="https://miro.medium.com/max/1400/1*RTAgh2bcEICfxwNx4v1fHw.gif" alt="vscode_gif6"></p>
 <br>
 <h3>설정</h3>
 <p>설정 파일은 JSON 형식으로 쓰여집니다.</p>
-<p><img src="../img/VSCode7.png" alt="vscode7"></p>
+<p><img src="../VSCode7.png" alt="vscode7"></p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">{
  &quot;html5 autocomplete&quot;: {
   &quot;prefix&quot;: &quot;html5&quot;,
@@ -148,7 +148,7 @@
 <p>자, 우리가 설정한 내용들이 잘 동작하는 것은 확인했지만, 조금 더 추가해야 합니다. html5 자동완성 기능은 오직 HTML 파일에서만 사용가능해야하며, 자바스크립트 파일에서는 이 단축 명령어가 필요없습니다.</p>
 <p>다행히, 설정 파일에서 스코프를 설정할 수 있습니다.</p>
 <p><code class="language-text">&quot;scope&quot;: &quot;html&quot;</code> 필드를 추가해주기만 하면 됩니다.</p>
-<p><img src="../img/VSCode8.png" alt="vscode8"></p>
+<p><img src="../VSCode8.png" alt="vscode8"></p>
 <br>
 <p>다시 테스트해봅시다.</p>
 <p><img src="https://miro.medium.com/max/1400/1*kVR4X1ukEXMBylDoGTdMJA.gif" alt="VSCode_gif9"></p>
@@ -161,7 +161,7 @@
 <p>자동 완성이 종료되었을 때, 커서는 코드의 끝에 멈춰있는 것을 볼 수 있습니다. 하지만 자동 완성 기능이 더 완전해지기 위해서는 제목이 입력되어야 합니다.</p>
 <p>만약 자동 완성 직후, 커서가 <code class="language-text">&lt;title&gt;&lt;/title&gt;</code> 안에 놓여진다면 더 편하게 작업할 수 있을 겁니다.</p>
 <p>특별한 변수인 <code class="language-text">$0</code> 을 추가해서 이 기능을 만들 수 있습니다.</p>
-<p><img src="../img/VSCode9.png" alt="vscode9"></p>
+<p><img src="../VSCode9.png" alt="vscode9"></p>
 <br>
 <p>자동 완성이 된 직후, 커서는 자동적으로 <code class="language-text">$0</code> 에 위치할 것입니다.</p>
 <p><img src="https://miro.medium.com/max/1344/1*GeBMp9i2Qp3j4s0qnkuitw.gif" alt="vscode_11"></p>

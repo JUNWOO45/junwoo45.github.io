@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[박준우 블로그]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://junwoo45.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 17 Feb 2021 15:54:11 GMT</lastBuildDate><item><title><![CDATA[<번역>DRY가 먹히지 않으면, WET하게]]></title><description><![CDATA[이 글을 Nick Bull의 When DRY Doesn’t Work, Go WET을 번역한 글입니다. 원문은 When DRY Doesn’t Work, Go WET{:target=”_blank”} 에서 확인하실 수 있습니다. DRY…]]></description><link>https://junwoo45.github.io/2020-11-17-repeat-yourself/</link><guid isPermaLink="false">https://junwoo45.github.io/2020-11-17-repeat-yourself/</guid><pubDate>Tue, 17 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[박준우 블로그]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://junwoo45.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 17 Feb 2021 16:02:43 GMT</lastBuildDate><item><title><![CDATA[<번역>DRY가 먹히지 않으면, WET하게]]></title><description><![CDATA[이 글을 Nick Bull의 When DRY Doesn’t Work, Go WET을 번역한 글입니다. 원문은 When DRY Doesn’t Work, Go WET{:target=”_blank”} 에서 확인하실 수 있습니다. DRY…]]></description><link>https://junwoo45.github.io/2020-11-17-repeat-yourself/</link><guid isPermaLink="false">https://junwoo45.github.io/2020-11-17-repeat-yourself/</guid><pubDate>Tue, 17 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;이 글을 Nick Bull의 When DRY Doesn’t Work, Go WET을 번역한 글입니다.&lt;/p&gt;
 &lt;p&gt;원문은 &lt;a href=&quot;https://medium.com/better-programming/when-dry-doesnt-work-go-wet-6befda0444bf&quot;&gt;When DRY Doesn’t Work, Go WET&lt;/a&gt;{:target=”_blank”} 에서 확인하실 수 있습니다.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -101,7 +101,7 @@
 &lt;p&gt;이 글을 bitfish의 Use VSCode Like a Senior Developer을 번역한 글입니다.&lt;/p&gt;
 &lt;p&gt;원문은 &lt;a href=&quot;https://levelup.gitconnected.com/use-vscode-like-a-senior-developer-9b54054c452a&quot;&gt;Use VSCode Like a Senior Developer&lt;/a&gt;{:target=”_blank”} 에서 확인하실 수 있습니다.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;../img/VSCode1.jpeg&quot; alt=&quot;vscod1&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../VSCode1.jpeg&quot; alt=&quot;vscod1&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;small&gt;Photo by &lt;a href=&quot;https://unsplash.com/@pankajpatel&quot;&gt;Pankaj Patel&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/&quot;&gt;Unsplash&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
 &lt;p&gt;VSCode는 인기있는 코드 에디터 중 하나이며, VSCode에 익숙해지며 생산성을 엄청나게 끌어올릴 수 있습니다. 이 글에서 소개하는 팁들이 도움이 되었으면 좋겠습니다.&lt;/p&gt;
 &lt;p&gt;다음과 같은 기능들을 소개할 것입니다.&lt;/p&gt;
@@ -124,7 +124,7 @@
   &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Lorem, ipsum dolor.&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;li&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;ul&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;어떻게 작업하실 생각입니까?&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../img/VSCode2.png&quot; alt=&quot;vscode2&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../VSCode2.png&quot; alt=&quot;vscode2&quot;&gt;&lt;/p&gt;
 &lt;p&gt;저는 한 곳에 &lt;code class=&quot;language-text&quot;&gt;class=&amp;quot;odd&amp;quot;&lt;/code&gt; 를 입력하고, 다른 곳에 복사-붙여넣기를 하곤 했습니다. 하지만 멀티 커서 기능을 알고난 뒤, 제 작업 효율성은 크게 증가했습니다.&lt;/p&gt;
 &lt;p&gt;특히, 키보드의 Alt 키를 누른 상태에서(macOS의 경우 Option 키), 다른 영역을 클릭하면 추가 커서가 생성됩니다. 이렇게 되면 각 커서 위치에서 동시에 타이핑을 할 수 있습니다.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/1154/1*mRmuHM9dkEyuzlYQXH4Ycw.gif&quot; alt=&quot;vscode_gif1&quot;&gt;&lt;/p&gt;
@@ -192,24 +192,24 @@
 &lt;blockquote&gt;
 &lt;h3&gt;Preferences -&gt; User Snippets&lt;/h3&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;../img/VSCode3.png&quot; alt=&quot;vscode3&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../VSCode3.png&quot; alt=&quot;vscode3&quot;&gt;&lt;/p&gt;
 &lt;p&gt;그러면 VSCode에 다음과 같은 창이 뜰 것입니다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../img/VSCode4.png&quot; alt=&quot;vscode4&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../VSCode4.png&quot; alt=&quot;vscode4&quot;&gt;&lt;/p&gt;
 &lt;p&gt;이 창에서, 이미 존재하는 설정파일을 선택한 뒤 수정할 수 있습니다. 또는 새로운 설정 파일을 생성할 수 도 있습니다.&lt;/p&gt;
 &lt;p&gt;자, 새로운 설정 파일을 만들어보죠.&lt;/p&gt;
 &lt;p&gt;만약 &lt;code class=&quot;language-text&quot;&gt;New Global Snippets file&lt;/code&gt; 을 선택하면, 전역으로 활성화되는 설정 파일이 만들어집니다.&lt;/p&gt;
 &lt;p&gt;만약 &lt;code class=&quot;language-text&quot;&gt;New Snippets file for &amp;#39;test&amp;#39;&lt;/code&gt; 를 선택하면, 해당 프로젝트에서만 활성화되는 설정 파일이 만들어 집니다.&lt;/p&gt;
 &lt;p&gt;이 프로젝트에서만 활성화되는 파일을 만들어보도록 하죠.&lt;/p&gt;
 &lt;p&gt;선택을 하고 나면, 새롭게 생성될 파일의 이름을 입력하라고 물어봅니다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../img/VSCode5.png&quot; alt=&quot;vscode5&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../VSCode5.png&quot; alt=&quot;vscode5&quot;&gt;&lt;/p&gt;
 &lt;p&gt;좋습니다. 설정 파일을 만들었습니다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../img/VSCode6.png&quot; alt=&quot;vscode6&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../VSCode6.png&quot; alt=&quot;vscode6&quot;&gt;&lt;/p&gt;
 &lt;p&gt;이 글을 읽는 사람들을 위해 GIF를 녹화했는데, 도움이 되길 바랍니다.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/1400/1*RTAgh2bcEICfxwNx4v1fHw.gif&quot; alt=&quot;vscode_gif6&quot;&gt;&lt;/p&gt;
 &lt;br&gt;
 &lt;h3&gt;설정&lt;/h3&gt;
 &lt;p&gt;설정 파일은 JSON 형식으로 쓰여집니다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../img/VSCode7.png&quot; alt=&quot;vscode7&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../VSCode7.png&quot; alt=&quot;vscode7&quot;&gt;&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{
  &amp;quot;html5 autocomplete&amp;quot;: {
   &amp;quot;prefix&amp;quot;: &amp;quot;html5&amp;quot;,
@@ -244,7 +244,7 @@
 &lt;p&gt;자, 우리가 설정한 내용들이 잘 동작하는 것은 확인했지만, 조금 더 추가해야 합니다. html5 자동완성 기능은 오직 HTML 파일에서만 사용가능해야하며, 자바스크립트 파일에서는 이 단축 명령어가 필요없습니다.&lt;/p&gt;
 &lt;p&gt;다행히, 설정 파일에서 스코프를 설정할 수 있습니다.&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;scope&amp;quot;: &amp;quot;html&amp;quot;&lt;/code&gt; 필드를 추가해주기만 하면 됩니다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../img/VSCode8.png&quot; alt=&quot;vscode8&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../VSCode8.png&quot; alt=&quot;vscode8&quot;&gt;&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;다시 테스트해봅시다.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/1400/1*kVR4X1ukEXMBylDoGTdMJA.gif&quot; alt=&quot;VSCode_gif9&quot;&gt;&lt;/p&gt;
@@ -257,7 +257,7 @@
 &lt;p&gt;자동 완성이 종료되었을 때, 커서는 코드의 끝에 멈춰있는 것을 볼 수 있습니다. 하지만 자동 완성 기능이 더 완전해지기 위해서는 제목이 입력되어야 합니다.&lt;/p&gt;
 &lt;p&gt;만약 자동 완성 직후, 커서가 &lt;code class=&quot;language-text&quot;&gt;&amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;&lt;/code&gt; 안에 놓여진다면 더 편하게 작업할 수 있을 겁니다.&lt;/p&gt;
 &lt;p&gt;특별한 변수인 &lt;code class=&quot;language-text&quot;&gt;$0&lt;/code&gt; 을 추가해서 이 기능을 만들 수 있습니다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;../img/VSCode9.png&quot; alt=&quot;vscode9&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../VSCode9.png&quot; alt=&quot;vscode9&quot;&gt;&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;자동 완성이 된 직후, 커서는 자동적으로 &lt;code class=&quot;language-text&quot;&gt;$0&lt;/code&gt; 에 위치할 것입니다.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://miro.medium.com/max/1344/1*GeBMp9i2Qp3j4s0qnkuitw.gif&quot; alt=&quot;vscode_11&quot;&gt;&lt;/p&gt;
