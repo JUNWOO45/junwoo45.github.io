@@ -1,0 +1,483 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.58a1ac912fb3578e570e.css" id="gatsby-global-css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}
+
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden]{display:none}:root{--maxWidth-none:"none";--maxWidth-xs:20rem;--maxWidth-sm:24rem;--maxWidth-md:28rem;--maxWidth-lg:32rem;--maxWidth-xl:36rem;--maxWidth-2xl:42rem;--maxWidth-3xl:48rem;--maxWidth-4xl:56rem;--maxWidth-full:"100%";--maxWidth-wrapper:var(--maxWidth-2xl);--spacing-px:"1px";--spacing-0:0;--spacing-1:0.25rem;--spacing-2:0.5rem;--spacing-3:0.75rem;--spacing-4:1rem;--spacing-5:1.25rem;--spacing-6:1.5rem;--spacing-8:2rem;--spacing-10:2.5rem;--spacing-12:3rem;--spacing-16:4rem;--spacing-20:5rem;--spacing-24:6rem;--spacing-32:8rem;--fontFamily-sans:Montserrat,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--fontFamily-serif:"Merriweather","Georgia",Cambria,"Times New Roman",Times,serif;--font-body:var(--fontFamily-serif);--font-heading:var(--fontFamily-sans);--fontWeight-normal:400;--fontWeight-medium:500;--fontWeight-semibold:600;--fontWeight-bold:700;--fontWeight-extrabold:800;--fontWeight-black:900;--fontSize-root:16px;--lineHeight-none:1;--lineHeight-tight:1.1;--lineHeight-normal:1.5;--lineHeight-relaxed:1.625;--fontSize-0:0.833rem;--fontSize-1:1rem;--fontSize-2:1.2rem;--fontSize-3:1.44rem;--fontSize-4:1.728rem;--fontSize-5:2.074rem;--fontSize-6:2.488rem;--fontSize-7:2.986rem;--color-primary:#005b99;--color-text:#2e353f;--color-text-light:#4f5969;--color-heading:#1a202c;--color-heading-black:#000;--color-accent:#d1dce5}*,:after,:before{box-sizing:border-box}html{line-height:var(--lineHeight-normal);font-size:var(--fontSize-root);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{font-family:var(--font-body);font-size:var(--fontSize-1);color:var(--color-text)}footer{padding:var(--spacing-6) var(--spacing-0)}hr{background:var(--color-accent);height:1px;border:0}h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);margin-top:var(--spacing-12);margin-bottom:var(--spacing-6);line-height:var(--lineHeight-tight);letter-spacing:-.025em}h2,h3,h4,h5,h6{font-weight:var(--fontWeight-bold);color:var(--color-heading)}h1{font-weight:var(--fontWeight-black);font-size:var(--fontSize-6);color:var(--color-heading-black)}h2{font-size:var(--fontSize-5)}h3{font-size:var(--fontSize-4)}h4{font-size:var(--fontSize-3)}h5{font-size:var(--fontSize-2)}h6{font-size:var(--fontSize-1)}h1>a,h2>a,h3>a,h4>a,h5>a,h6>a{color:inherit;text-decoration:none}p{line-height:var(--lineHeight-relaxed);--baseline-multiplier:0.179;--x-height-multiplier:0.35;margin:var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0)}ol,p,ul{padding:var(--spacing-0)}ol,ul{margin-left:var(--spacing-0);margin-right:var(--spacing-0);margin-bottom:var(--spacing-8);list-style-position:outside;list-style-image:none}ol li,ul li{padding-left:var(--spacing-0)}li>p,ol li,ul li{margin-bottom:calc(var(--spacing-8)/2)}li :last-child{margin-bottom:var(--spacing-0)}li>ul{margin-left:var(--spacing-8);margin-top:calc(var(--spacing-8)/2)}blockquote{color:var(--color-text-light);margin-left:calc(var(--spacing-6)*-1);margin-right:var(--spacing-8);padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);border-left:var(--spacing-1) solid var(--color-primary);font-size:var(--fontSize-2);font-style:italic;margin-bottom:var(--spacing-8)}blockquote>:last-child{margin-bottom:var(--spacing-0)}blockquote>ol,blockquote>ul{list-style-position:inside}table{width:100%;margin-bottom:var(--spacing-8);border-collapse:collapse;border-spacing:.25rem}table thead tr th{border-bottom:1px solid var(--color-accent)}a{color:var(--color-primary)}a:focus,a:hover{text-decoration:none}.global-wrapper{margin:var(--spacing-0) auto;max-width:var(--maxWidth-wrapper);padding:var(--spacing-10) var(--spacing-5)}.global-wrapper[data-is-root-path=true] .bio{margin-bottom:var(--spacing-20)}.global-header{margin-bottom:var(--spacing-12)}.main-heading{font-size:var(--fontSize-7);margin:0}.post-list-item{margin-bottom:var(--spacing-8);margin-top:var(--spacing-8)}.post-list-item p{margin-bottom:var(--spacing-0)}.post-list-item h2{font-size:var(--fontSize-4);color:var(--color-primary);margin-bottom:var(--spacing-2);margin-top:var(--spacing-0)}.post-list-item header{margin-bottom:var(--spacing-4)}.header-link-home{font-weight:var(--fontWeight-bold);font-family:var(--font-heading);text-decoration:none;font-size:var(--fontSize-2)}.bio{display:flex;margin-bottom:var(--spacing-16)}.bio-avatar,.bio p{margin-bottom:var(--spacing-0)}.bio-avatar{margin-right:var(--spacing-4);min-width:50px;border-radius:100%}.blog-post header h1{margin:var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0)}.blog-post header p{font-size:var(--fontSize-2);font-family:var(--font-heading)}.blog-post-nav ul{margin:var(--spacing-0)}.gatsby-highlight{margin-bottom:var(--spacing-8)}@media (max-width:42rem){blockquote{padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);margin-left:var(--spacing-0)}ol,ul{list-style-position:inside}}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.32.3"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><title data-react-helmet="true">&lt;번역&gt;시니어 개발자처럼 VSCode 사용하기 | 박준우 블로그</title><meta data-react-helmet="true" name="description" content="이 글을 bitfish의 Use VSCode Like a Senior Developer을 번역한 글입니다."/><meta data-react-helmet="true" property="og:title" content="&lt;번역&gt;시니어 개발자처럼 VSCode 사용하기"/><meta data-react-helmet="true" property="og:description" content="이 글을 bitfish의 Use VSCode Like a Senior Developer을 번역한 글입니다."/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="kylemathews"/><meta data-react-helmet="true" name="twitter:title" content="&lt;번역&gt;시니어 개발자처럼 VSCode 사용하기"/><meta data-react-helmet="true" name="twitter:description" content="이 글을 bitfish의 Use VSCode Like a Senior Developer을 번역한 글입니다."/><link as="script" rel="preload" href="/webpack-runtime-4a5b379df86961d8f96d.js"/><link as="script" rel="preload" href="/framework-e2d419ac45d8ae41957a.js"/><link as="script" rel="preload" href="/styles-755093da0c07f4b49226.js"/><link as="script" rel="preload" href="/app-e96b944a7c6af244c961.js"/><link as="script" rel="preload" href="/commons-d9dafa7b739cb27f2739.js"/><link as="script" rel="preload" href="/cd7d5f864fc9e15ed8adef086269b0aeff617554-1ca5ed2db9ab65ecd1e6.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-9d982ded75bfbb0a31d5.js"/><link as="fetch" rel="preload" href="/page-data/2020-09-02-use_vscode_like_a_senior_developer/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2841359383.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/916993862.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="global-wrapper" data-is-root-path="false"><header class="global-header"><a class="header-link-home" href="/">박준우 블로그</a></header><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><h1 itemProp="headline">&lt;번역&gt;시니어 개발자처럼 VSCode 사용하기</h1><p>September 02, 2020</p></header><section itemProp="articleBody"><blockquote>
+<p>이 글을 bitfish의 Use VSCode Like a Senior Developer을 번역한 글입니다.</p>
+<p>원문은 <a href="https://levelup.gitconnected.com/use-vscode-like-a-senior-developer-9b54054c452a">Use VSCode Like a Senior Developer</a>{:target=”_blank”} 에서 확인하실 수 있습니다.</p>
+</blockquote>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/f7dc325b1b64d1f3ea8daeef5c0105d1/d165a/VSCode1.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 66.45569620253164%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAEDBAX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABy0xJyuTX/8QAFxABAQEBAAAAAAAAAAAAAAAAARACA//aAAgBAQABBQKc3IX/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPwGq/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8BiP/EABYQAAMAAAAAAAAAAAAAAAAAABAgIf/aAAgBAQAGPwIVP//EABgQAQEBAQEAAAAAAAAAAAAAAAEAERAx/9oACAEBAAE/ISZCPHby3n//2gAMAwEAAgADAAAAEGMP/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARMf/aAAgBAwEBPxADyMX/xAAWEQEBAQAAAAAAAAAAAAAAAAABADH/2gAIAQIBAT8QUbM//8QAGRAAAwEBAQAAAAAAAAAAAAAAAAERITFR/9oACAEBAAE/EETTraYkeaeIMS5Ebyyyn//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="vscod1"
+        title="vscod1"
+        src="/static/f7dc325b1b64d1f3ea8daeef5c0105d1/828fb/VSCode1.jpg"
+        srcset="/static/f7dc325b1b64d1f3ea8daeef5c0105d1/ff44c/VSCode1.jpg 158w,
+/static/f7dc325b1b64d1f3ea8daeef5c0105d1/a6688/VSCode1.jpg 315w,
+/static/f7dc325b1b64d1f3ea8daeef5c0105d1/828fb/VSCode1.jpg 630w,
+/static/f7dc325b1b64d1f3ea8daeef5c0105d1/0ede0/VSCode1.jpg 945w,
+/static/f7dc325b1b64d1f3ea8daeef5c0105d1/3ac88/VSCode1.jpg 1260w,
+/static/f7dc325b1b64d1f3ea8daeef5c0105d1/d165a/VSCode1.jpg 1400w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><small>Photo by <a href="https://unsplash.com/@pankajpatel">Pankaj Patel</a> on <a href="https://unsplash.com/">Unsplash</a></small></p>
+<p>VSCode는 인기있는 코드 에디터 중 하나이며, VSCode에 익숙해지며 생산성을 엄청나게 끌어올릴 수 있습니다. 이 글에서 소개하는 팁들이 도움이 되었으면 좋겠습니다.</p>
+<p>다음과 같은 기능들을 소개할 것입니다.</p>
+<ul>
+<li>멀티 커서</li>
+<li>Symbol 이름 바꾸기</li>
+<li>행 이동</li>
+<li>사용자 정의 스니펫 설정</li>
+</ul>
+<br>
+<h2>멀티 커서</h2>
+<p>가끔 여러 군데에서 동시에 타이핑을 해야 할 수 있습니다.</p>
+<p>예를 들면, 첫번째, 세번째, 다섯번째 <code class="language-text">&lt;li&gt;</code> 에 <code class="language-text">class=&quot;odd&quot;</code> 속성을 주고, 두번째, 네번째, 여섯번째 <code class="language-text">&lt;li&gt;</code> 에는 <code class="language-text">class=&quot;even&quot;</code> 속성을 주려고 합니다.</p>
+<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>Lorem, ipsum dolor.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>Lorem, ipsum dolor.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>Lorem, ipsum dolor.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>Lorem, ipsum dolor.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>Lorem, ipsum dolor.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>Lorem, ipsum dolor.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span></code></pre></div>
+<p>어떻게 작업하실 생각입니까?</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/5d4e16601e4a2a780b2be23bb9332d30/ea964/VSCode2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 44.30379746835443%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsTAAALEwEAmpwYAAABWUlEQVQoz4WR626EIBCFff+363pHBNlVVPCGujbbrtDDJm3aX52QCRC+OWeY4K7UzNjz8XCvsNavf+L7RfD8/NyV2tvW9b0ryKp0UTqSPbVsSsaqqjqOI03T6ysopeMwHOM4C/FxHMHp3K61h6V0UTTdZE5dmjpZaV7St8tlnuGMxXGMnOc5yi0wyzkkg9NaVNqaxsNJbDqdFy4KrZIdLXys6wplbIQQgLuu24YB8Ps8v+Bp2kBiZenSqoI5SmwjelFxMMYYQggMA8ZRSrnDNmPvyxJYa+9ar3Xt4DyOTNsR6sKL01JzVmZZNk1TWZYQ55zj2DTN0vcL56C88v2n5zCc6ybJXBKdrbjiaZKk27aFYQhxlMCNV1YK9R7GBOd53ofB28ZvE4KexdUVFMpG1tc8J+M41nUNGBl/hmzGcb3d9r4P0PBEKabtB3eef8dpX3c+7K/p/+y/AE058MirXY28AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="vscode2"
+        title="vscode2"
+        src="/static/5d4e16601e4a2a780b2be23bb9332d30/f058b/VSCode2.png"
+        srcset="/static/5d4e16601e4a2a780b2be23bb9332d30/c26ae/VSCode2.png 158w,
+/static/5d4e16601e4a2a780b2be23bb9332d30/6bdcf/VSCode2.png 315w,
+/static/5d4e16601e4a2a780b2be23bb9332d30/f058b/VSCode2.png 630w,
+/static/5d4e16601e4a2a780b2be23bb9332d30/40601/VSCode2.png 945w,
+/static/5d4e16601e4a2a780b2be23bb9332d30/78612/VSCode2.png 1260w,
+/static/5d4e16601e4a2a780b2be23bb9332d30/ea964/VSCode2.png 1312w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>저는 한 곳에 <code class="language-text">class=&quot;odd&quot;</code> 를 입력하고, 다른 곳에 복사-붙여넣기를 하곤 했습니다. 하지만 멀티 커서 기능을 알고난 뒤, 제 작업 효율성은 크게 증가했습니다.</p>
+<p>특히, 키보드의 Alt 키를 누른 상태에서(macOS의 경우 Option 키), 다른 영역을 클릭하면 추가 커서가 생성됩니다. 이렇게 되면 각 커서 위치에서 동시에 타이핑을 할 수 있습니다.</p>
+<p><img src="https://miro.medium.com/max/1154/1*mRmuHM9dkEyuzlYQXH4Ycw.gif" alt="vscode_gif1"></p>
+<p>참고:</p>
+<ul>
+<li>Windows: Alt + Click</li>
+<li>macOS: Option + Click</li>
+</ul>
+<br>
+<h2>Symbol 이름 바꾸기</h2>
+<p>쉬운 예를 들어보겠습니다.</p>
+<p>코드나 문서를 작성할 때, 철자를 틀리거나 이름 명명 규칙을 바꾸고 싶으면 일괄적으로 단어를 수정해야합니다.</p>
+<p>아래와 같은 코드가 있고, <code class="language-text">foo</code> 를 <code class="language-text">bar</code> 로 바꾸고 싶습니다. 어떻게 작업하실 건가요?</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<p>단어를 하나씩 수정하면, 다음과 같은 단점이 있습니다.</p>
+<ul>
+<li>너무 귀찮다</li>
+<li>실수가 발생하기 쉽다</li>
+</ul>
+<p>여기서, VSCode의 <code class="language-text">Symbol 이름 바꾸기</code> 를 사용할 수 있다.</p>
+<p><img src="https://miro.medium.com/max/1204/1*72OGJI0NNjRrI0cti92-jQ.gif" alt="vscode_gif2"></p>
+<br>
+<p>이 옵션은 텍스트를 선택하고 우클릭을 하면 나타납니다. 또는 텍스트를 선택하고 <code class="language-text">F2</code> 단축키를 누르면 됩니다.</p>
+<br>
+<h2>행 이동</h2>
+<p>때때로, 코드나 텍스트를 전체적으로 위/아래로 이동시켜야 할 때가 있습니다.</p>
+<p>텍스트를 선택하고 다음과같이 하면 됩니다.</p>
+<ul>
+<li>Windows 경우, 위로 이동 시키려면 <code class="language-text">Alt</code> + <code class="language-text">↑</code> ; 아래로 이동 시키려면 <code class="language-text">Alt</code> + <code class="language-text">↓</code></li>
+<li>macOS의 경우, 위로 이동 시키려면 <code class="language-text">Option</code> + <code class="language-text">↑</code>; 아래로 이동 시키려면 <code class="language-text">Option</code> + <code class="language-text">↓</code></li>
+</ul>
+<p><img src="https://miro.medium.com/max/1400/1*oitgFmdRA1t53xTDniLtDw.gif" alt="vscode_gif3"></p>
+<br>
+<p>이 기능은 우리가 콘텐츠의 순서를 빠르게 변경하는데 도움을 줍니다.</p>
+<br>
+<h2>사용자 정의 스니펫 설정</h2>
+<p>코드를 작성하다 보면, 몇몇 코드들은 늘 반복해서 사용됩니다.</p>
+<p>예를 들어, HTML5 파일은 항상 다음과 같은 기본 구조를 가지게 됩니다.</p>
+<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre></div>
+<p>그리고 자바스크립트의 for-i 반복문을 작성하다보면, 늘 이러한 형태의 코드를 작성합니다.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span></code></pre></div>
+<p>이 외에도 굉장히 많은 경우가 있습니다. 이러한 스니펫들이 필요할 때마다 일일히 작성하는 것은 매우 비효율적입니다.</p>
+<p>다행히, VSCode는 사용자 정의 자동 완성 기능을 제공합니다. 데모를 보시죠.</p>
+<p><img src="https://miro.medium.com/max/1400/1*e4Srh3mFm7lSICGC-Tcv3A.gif" alt="vscode_gif5"></p>
+<p>위와 같은 기능을 사용하기 위한 VSCode 설정 방법을 알아봅시다.</p>
+<br>
+<h3>설정 파일 생성</h3>
+<p>VSCode는 설정 파일을 읽어야 위와 같은 일을 할 수 있기 때문에, 우선 설정 파일을 만들어야 합니다.</p>
+<p>다음과 같은 경로에서 설정 파일을 생성할 수 있습니다.</p>
+<p>우선, 설정파일을 생성하기 위해 다음과 같이 이동합니다.</p>
+<blockquote>
+<h3>Preferences -> User Snippets</h3>
+</blockquote>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/29a063d96900780d74bd7141ed6486e1/105d8/VSCode3.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 48.10126582278481%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAACTUlEQVQozw3QbVPSAADA8X3Orrvquq68q6uuxztLskBQxExROBrjYWMbG4yNsTEQQRwCwjYQdA8MHGkOFavz6gPE3e/t/80feL19OOe3HcgotW8kSjpRHUK5DrarUbXTEN2O8t0wK0e5Dsx3QKqOFnuBdB1kpVBWCjIS8GKzvEX33XB9I6X40HqQ6UYFjW7aIG/cXcjc/8w+Wso9ceeerfDPvfk5D/fYzT1wcvec3J1FFni4WnMRP5245UqevYdMR+Lcnbqa8ZLWckL2oooPkwNUP8oPIrwRZjUop7th+aW/8XSzOYsbDtR2kxfL1KUDv55HLj8gk3l4spG9ICtmKN2EmDZROuEOTlnRrB9fK+af7J4ZZfoxVgM+xiSkYm1nj5Hqj1TTTjcvmNYl05oQ1VF6fxwXTvCSIbTtomQX2z93ZTu7P9g5GEqd80PlHPgEK9+FwRqh+Ag5kNPAghkrWX76KCKoTOMsnu9jJQ0rqWRFo0WT2tNr6jRdHYGMihZMYAnrkfUJXBknD2z+6Fbo/833bjOtK7JmQ4VxkNFm5wJZdYvWcXGKi9dU8/cWY7iQ7hqpAitEL1GxwnktUjRA/iRa0JHykBStb5S2iE9XM7989I0nffMKmryBJu+iV29j04W44Un2PIQGfIEVJ9x2we1lVPLh8ldC2Uh118lOONfnW2dkRSfKerKs0rVBqWs3BreS9Y8SxyHWgIQR4ER7S9ixN6WuZ3Q/YwRZE+SGUH4YF0xsR42wcow/CtFysjxgahYtns7ARRPMj2I71n/yjqtHlJBzlwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="vscode3"
+        title="vscode3"
+        src="/static/29a063d96900780d74bd7141ed6486e1/f058b/VSCode3.png"
+        srcset="/static/29a063d96900780d74bd7141ed6486e1/c26ae/VSCode3.png 158w,
+/static/29a063d96900780d74bd7141ed6486e1/6bdcf/VSCode3.png 315w,
+/static/29a063d96900780d74bd7141ed6486e1/f058b/VSCode3.png 630w,
+/static/29a063d96900780d74bd7141ed6486e1/40601/VSCode3.png 945w,
+/static/29a063d96900780d74bd7141ed6486e1/105d8/VSCode3.png 1170w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>그러면 VSCode에 다음과 같은 창이 뜰 것입니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/d36f46d8d5ff64cfbd0b568583bc8f48/2cefc/VSCode4.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 36.075949367088604%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAz0lEQVQY042O3W6EIBBGef83a/qTZptssmB1UUEBR4RBxXVtSneT3tS0PTm355sh2qKx/m43oO5dowFcmNeP6bL9dF63uG7LuoV4JW9l/0TlM5UvmTqcgelIVczMUvTXXV9FfCynBz4d1ULKWrLsvTjzvOCN0oMPSetw18GhBseVLRqrwJGqqk4JemKUZowBQAiI6HcN6K3zvLVM9AoG0kiZeoDuq7iBv5KmpzHMYxgDkrZthRDpYHfDOYd/cX8jQeq6zvM8TRhjtNb/ib/5BFznhzI7CnNYAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="vscode4"
+        title="vscode4"
+        src="/static/d36f46d8d5ff64cfbd0b568583bc8f48/f058b/VSCode4.png"
+        srcset="/static/d36f46d8d5ff64cfbd0b568583bc8f48/c26ae/VSCode4.png 158w,
+/static/d36f46d8d5ff64cfbd0b568583bc8f48/6bdcf/VSCode4.png 315w,
+/static/d36f46d8d5ff64cfbd0b568583bc8f48/f058b/VSCode4.png 630w,
+/static/d36f46d8d5ff64cfbd0b568583bc8f48/40601/VSCode4.png 945w,
+/static/d36f46d8d5ff64cfbd0b568583bc8f48/78612/VSCode4.png 1260w,
+/static/d36f46d8d5ff64cfbd0b568583bc8f48/2cefc/VSCode4.png 1400w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>이 창에서, 이미 존재하는 설정파일을 선택한 뒤 수정할 수 있습니다. 또는 새로운 설정 파일을 생성할 수 도 있습니다.</p>
+<p>자, 새로운 설정 파일을 만들어보죠.</p>
+<p>만약 <code class="language-text">New Global Snippets file</code> 을 선택하면, 전역으로 활성화되는 설정 파일이 만들어집니다.</p>
+<p>만약 <code class="language-text">New Snippets file for &#39;test&#39;</code> 를 선택하면, 해당 프로젝트에서만 활성화되는 설정 파일이 만들어 집니다.</p>
+<p>이 프로젝트에서만 활성화되는 파일을 만들어보도록 하죠.</p>
+<p>선택을 하고 나면, 새롭게 생성될 파일의 이름을 입력하라고 물어봅니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/1a82d64f95c29ae03b5fb83338b00eaf/e6c84/VSCode5.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 17.088607594936708%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAIAAAAcOLh5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdElEQVQI132K2wqDMBBE8///F5LdNbc+KLE1qGltTGxpkFIKgsM8nDkM64ap89e4pLy91/I6aToY1t7GS+vD/IjP/Ou8rDGV79xhN/n/c0+F9b4HQGOMEIKInHOyBkAp1TQKkCpbawmRc14PWmtEFFIOIXwAZOmnf8zRCfAAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="vscode5"
+        title="vscode5"
+        src="/static/1a82d64f95c29ae03b5fb83338b00eaf/f058b/VSCode5.png"
+        srcset="/static/1a82d64f95c29ae03b5fb83338b00eaf/c26ae/VSCode5.png 158w,
+/static/1a82d64f95c29ae03b5fb83338b00eaf/6bdcf/VSCode5.png 315w,
+/static/1a82d64f95c29ae03b5fb83338b00eaf/f058b/VSCode5.png 630w,
+/static/1a82d64f95c29ae03b5fb83338b00eaf/40601/VSCode5.png 945w,
+/static/1a82d64f95c29ae03b5fb83338b00eaf/e6c84/VSCode5.png 1148w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>좋습니다. 설정 파일을 만들었습니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/2923ef8ad75da94356bd3f8eebc98df9/2cefc/VSCode6.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 58.86075949367089%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcUlEQVQoz42Ri27rIAyG8/5Pd6at1XpVm7RJoEBpwObWJOefdiadVdM2YyJs8tk/UC0Xfw7Ho1JKSmmtkbJv2/Z8PiuNnLp8GHZPp1PTNEKItxDjcqkwrbUhBCLKOXnyzt3Yc6DAxNM4zeP8z6d5mv4Lx7mqm/Z1taubvm4EcYq5eHKKlHRSe23YCCfeQi/hli0ymnXvehts1XWntu2MsVqbGFMs95DD1mx3ZreQC3yfxfOLfFlelgjXag1H5ql/wqIahsF75zGdSymFfOfEh+uhuTVrvV6p1XuV/XW/1VuUAHO0x43e7M2+ch+GKoBTGdEZMLYVq2u4QiT8Fm/QiYwkGUvE4cdpfIQplZBCO7S1rfFr5zrwoQQA+Z7nz/YIu5gBm2CgFg2h0CU3xOG9xA/wEDIlhsKN2ggvsABcxjJ/ZY+wJSgnGy2eBxi6cWYuDD7dE/xbmBNFgmDweFLKBM0IUQjKIeQ7OORCTLjJ+Rf2F7TrqRzdL0S1AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="vscode6"
+        title="vscode6"
+        src="/static/2923ef8ad75da94356bd3f8eebc98df9/f058b/VSCode6.png"
+        srcset="/static/2923ef8ad75da94356bd3f8eebc98df9/c26ae/VSCode6.png 158w,
+/static/2923ef8ad75da94356bd3f8eebc98df9/6bdcf/VSCode6.png 315w,
+/static/2923ef8ad75da94356bd3f8eebc98df9/f058b/VSCode6.png 630w,
+/static/2923ef8ad75da94356bd3f8eebc98df9/40601/VSCode6.png 945w,
+/static/2923ef8ad75da94356bd3f8eebc98df9/78612/VSCode6.png 1260w,
+/static/2923ef8ad75da94356bd3f8eebc98df9/2cefc/VSCode6.png 1400w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>이 글을 읽는 사람들을 위해 GIF를 녹화했는데, 도움이 되길 바랍니다.</p>
+<p><img src="https://miro.medium.com/max/1400/1*RTAgh2bcEICfxwNx4v1fHw.gif" alt="vscode_gif6"></p>
+<br>
+<h3>설정</h3>
+<p>설정 파일은 JSON 형식으로 쓰여집니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/1ca544eae9bff0421c106ca7967e3d7c/2cefc/VSCode7.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 74.0506329113924%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsTAAALEwEAmpwYAAABn0lEQVQoz42Ti26jMBBF+f//a5INbTB1COZp47ENfqYDSaqtdhP1ykhI9pnrOwzZMAyU0qqq5CYhBAA4p7qOXS41Yw3u9n2/LIsEmKSc/lLWMFZVZ7UKcAFIY7T3TnBujFoWGMdxPSgllpiN8SH4h7JhGMtPFAVAVEmJJXSIEcyCNhKmlBLWiogEf71eEy58NmUX1n0U9HAgx/xzfzj9OZbdoGJKyjr04Go+MUU7fWpUUfFDXp9rjrcIIaww71hJSF3X6HlLgs7oJmcb1hu6jxp2FTCuZ1CaMcNFelhnQrSMIYntWIUvWq8wbLBzbpTzhbaCUt223hgrhF+WOww/dYMx1rTB1rkUgnrPoSBAyJTn0/Go6toZ8xRO98wrjFefCBF5boYhWBu9j9beMz9zFma5wXja4wYhsizntjUYu2mcta+ce2W+YUkIf3vTXffdqleZfYiNVDHeYSgKvtupvv+BvoDROT6cFaV8v9dN8ysYJ6yD9fL4qXCqccQitj3G629gbDST2hiD87yO5BY1/aOnzlhg5PhTjIhh5+L/9AWFe1qtb5pZsAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="vscode7"
+        title="vscode7"
+        src="/static/1ca544eae9bff0421c106ca7967e3d7c/f058b/VSCode7.png"
+        srcset="/static/1ca544eae9bff0421c106ca7967e3d7c/c26ae/VSCode7.png 158w,
+/static/1ca544eae9bff0421c106ca7967e3d7c/6bdcf/VSCode7.png 315w,
+/static/1ca544eae9bff0421c106ca7967e3d7c/f058b/VSCode7.png 630w,
+/static/1ca544eae9bff0421c106ca7967e3d7c/40601/VSCode7.png 945w,
+/static/1ca544eae9bff0421c106ca7967e3d7c/78612/VSCode7.png 1260w,
+/static/1ca544eae9bff0421c106ca7967e3d7c/2cefc/VSCode7.png 1400w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">{
+ &quot;html5 autocomplete&quot;: {
+  &quot;prefix&quot;: &quot;html5&quot;,
+  &quot;body&quot;: [
+   &quot;&lt;!DOCTYPE html&gt;&quot;,
+      &quot;&lt;html lang=\&quot;en\&quot;&gt;&quot;,
+      &quot;&lt;head&gt;&quot;,
+      &quot;  &lt;title&gt;&lt;/title&gt;&quot;,
+      &quot;&lt;/head&gt;&quot;,
+      &quot;&lt;body&gt;&quot;,
+      &quot;&lt;/body&gt;&quot;,
+      &quot;&lt;/html&gt;&quot;
+  ]
+ }
+}</code></pre></div>
+<br>
+<p>우선, <code class="language-text">&quot;html5 autocomplete&quot;</code> 필드를 봅시다. 이 필드는 개발자에게 해당 필드가 어떤 역할을 하는지 알려주는 역할을 할 뿐, 다른 일은 하지 않으며 원하는 대로 작성 가능합니다.</p>
+<p><code class="language-text">&quot;prefix&quot;: &quot;html5&quot;</code> 를 봅시다. 이 필드는 우리가 정의하는 단축키 명령어입니다. 파일에서 <code class="language-text">html5</code> 라고 입력하면, VSCode는 자동으로 코드를 완성시켜줄 것입니다.</p>
+<p>그리고 <code class="language-text">&quot;body&quot;: [...]</code> 를 봅시다. 이 필드의 내용은 우리가 완성되길 원하는 코드 본문입니다. 여러 줄의 코드일 수 있기 때문에, 이 필드는 배열 형태로 작성해야 합니다. 배열의 각각의 엘리먼트들은 코드 한 줄을 의미합니다. 위 배열을 코드로 바꿔보면 다음과 같습니다.</p>
+<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre></div>
+<br>
+<p>자, 기본적인 설정을 끝맞췄으니, 테스트해봅시다.</p>
+<p><img src="https://miro.medium.com/max/1400/1*phqBii-urwqR8UZr-7AIPA.gif" alt="vscode_gif8"></p>
+<br>
+<h3>스코프</h3>
+<p>자, 우리가 설정한 내용들이 잘 동작하는 것은 확인했지만, 조금 더 추가해야 합니다. html5 자동완성 기능은 오직 HTML 파일에서만 사용가능해야하며, 자바스크립트 파일에서는 이 단축 명령어가 필요없습니다.</p>
+<p>다행히, 설정 파일에서 스코프를 설정할 수 있습니다.</p>
+<p><code class="language-text">&quot;scope&quot;: &quot;html&quot;</code> 필드를 추가해주기만 하면 됩니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/1e17e47cf27610fe95543ac42fbb0a7c/2cefc/VSCode8.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 79.11392405063292%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAAsTAAALEwEAmpwYAAABoklEQVQoz42S7W7TMBSGc/8XsRvgDtDED34hoW1iSFVoA8lo16Zr7Pj7+9icZGUTqBm8SizbOo/fc45daa0Joc4Za9k4i3NOCGGMOeeEmOaUTvvDMCil6CyclFKqlBLXBhfa6BjBhxBjdN7HmBLkEBMuw7yJY5r1PJlg/IV1IXhp4/deHqjpqfl5Ut1BtHv2eJJKa+99uaQq58yNSwAZ0uYgb1px24ntUW7r7sddLQaaZ/0Djt68/zpcfZLvvugPK/nx8+P1TU8tYNACWyrImWmLpZYMe6JXHTkeTuzp5KZaYrQ2A5SyDKMzAEz9SSk+9byuVdvKphHNhjeNGgZs0VLaRfkww5PUbjfW3ywhcrv14+goDUI4rRecIY/anmG8JErZes3aNigVlUIySLmUeRUSHLnKv2EMRU++2WAKnnNHCB6Hl3wZdjH1CGesN+EBercj9/fi4SEs1Pmnc0yD1C+w6ftxteJd55/rxJYsXdTZmcm/4fX6FX7D2Z/TxpYBvnDA9z1/b2OvzkehMBQ7Bcvv4TJsQtgzGbxXc575Pwxf9AvQXKGfgU57dgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="vscode8"
+        title="vscode8"
+        src="/static/1e17e47cf27610fe95543ac42fbb0a7c/f058b/VSCode8.png"
+        srcset="/static/1e17e47cf27610fe95543ac42fbb0a7c/c26ae/VSCode8.png 158w,
+/static/1e17e47cf27610fe95543ac42fbb0a7c/6bdcf/VSCode8.png 315w,
+/static/1e17e47cf27610fe95543ac42fbb0a7c/f058b/VSCode8.png 630w,
+/static/1e17e47cf27610fe95543ac42fbb0a7c/40601/VSCode8.png 945w,
+/static/1e17e47cf27610fe95543ac42fbb0a7c/78612/VSCode8.png 1260w,
+/static/1e17e47cf27610fe95543ac42fbb0a7c/2cefc/VSCode8.png 1400w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<br>
+<p>다시 테스트해봅시다.</p>
+<p><img src="https://miro.medium.com/max/1400/1*kVR4X1ukEXMBylDoGTdMJA.gif" alt="VSCode_gif9"></p>
+<p>좋습니다. 이제 자바스크립트 파일에서는 단축어는 자동으로 꺼집니다.</p>
+<br>
+<h3>커서</h3>
+<p>자동 완성 기능을 다시 테스트해봅시다. 조금 불편한 점이 있지 않나요?</p>
+<p><img src="https://miro.medium.com/max/1330/1*kvShU86p2ZIZT5pWrfClkg.gif" alt="VSCode10_gif"></p>
+<br>
+<p>자동 완성이 종료되었을 때, 커서는 코드의 끝에 멈춰있는 것을 볼 수 있습니다. 하지만 자동 완성 기능이 더 완전해지기 위해서는 제목이 입력되어야 합니다.</p>
+<p>만약 자동 완성 직후, 커서가 <code class="language-text">&lt;title&gt;&lt;/title&gt;</code> 안에 놓여진다면 더 편하게 작업할 수 있을 겁니다.</p>
+<p>특별한 변수인 <code class="language-text">$0</code> 을 추가해서 이 기능을 만들 수 있습니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/cfdc5338d9f2ab5e014c10d2a6c89b83/f0551/VSCode9.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 135.44303797468356%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAbCAIAAADzvTiPAAAACXBIWXMAAAsTAAALEwEAmpwYAAACzklEQVQ4y51V2XLaQBD0/39LnlLlquQlcaWKB4htsMHYiENCQve5l1ary2khnGAqPlVTQizq6Z6e2eXMNM2iKB4/dZ2posiLyk1lzJSXSiLKXNUpVwgqyogUYSYzpiIiQ5KrsuKcK6UO4Lqui7Ier5PJJrlaxbtIaDa9XMZjPR1v4p+z4OI+njt8uEoXu4wx5nke8EC2bXtWVVXbNnXTGAHfBnztMoCRwk9pmwuqaQih63R+V1HSnsgGc1XVSGNFwvA5lFsht+OcMV4rVaQpNbZ0s5Gexzjv3cHL/8BN092cOH+wyO9lNNRiG/UJznUjGA6j62vhulyI/xjW4fYJwAbZS5tsXCqlRHlYLxkrKW3KEqk6xrY9BePCqubQwUM00BI9yvOicD2vLMs3WtWDm6bBlyIMZRhm83l8MyHLVXJ3F43HCmXrerZY8N0u9/2evL/3NXfCq7opGZdxkj48JLNZ7ro5TDKMSgi6XiOR9H2eJJSQv/oPzF2Kti2SBDBEfHMDDFmv/dEoGI2E4+AZzjFd54ZBLSvf+/ckew/G+EA2dMogUISoJCmzDBKaoqikxEqjFMxDb+HoKTN+jqdTUHmDQTKZsCyTr3r2jBmcKEZlGVmthGVR0ySm9evH7Mf5hfJcGMYtCy7w7Vam6XMwbMtzLAEMq6Af78Hzb19H51++K89hponi0/t7YZpZkmCuj2SjVVHEtttkOkXEt7dksZBCtO+SvWfOg6DzVtPIcgnDsIGaqnrcd7aPtn84Bh8MyzIYFl5eIuhqRaMof/WcOAWj1XCFGgY6JFA5RqKnfQncTxg+MBjYQLAE8xBeXWEbZmla7yf3jdlGcsyGsG2A4VY6n3PHUYy9zYwN1G30pkGr4VMnOAjKHvlKzdXeTLjq+/7xKfGu0xO0lFKAD7CnljweteRFMDDYS8B/lLYD27bdn8MfRXZgQgg8+9w/xh8v4RDtIrmUygAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="vscode9"
+        title="vscode9"
+        src="/static/cfdc5338d9f2ab5e014c10d2a6c89b83/f058b/VSCode9.png"
+        srcset="/static/cfdc5338d9f2ab5e014c10d2a6c89b83/c26ae/VSCode9.png 158w,
+/static/cfdc5338d9f2ab5e014c10d2a6c89b83/6bdcf/VSCode9.png 315w,
+/static/cfdc5338d9f2ab5e014c10d2a6c89b83/f058b/VSCode9.png 630w,
+/static/cfdc5338d9f2ab5e014c10d2a6c89b83/f0551/VSCode9.png 862w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<br>
+<p>자동 완성이 된 직후, 커서는 자동적으로 <code class="language-text">$0</code> 에 위치할 것입니다.</p>
+<p><img src="https://miro.medium.com/max/1344/1*GeBMp9i2Qp3j4s0qnkuitw.gif" alt="vscode_11"></p>
+<br>
+<h3>예제</h3>
+<p>이젠 배운 것을 사용해여 새로운 예제를 만들어 봅시다.</p>
+<p>자바스크립트나 타입스크립트 파일에서 <code class="language-text">fori</code> 란 문자열을 입력하면 VSCode가 다음과 같은 코드를 자동완성 시키길 원합니다.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>커서는 <code class="language-text">i &lt;</code> 다음에 오면 좋겠네요.</p>
+<p>잠시 멈추고, 스스로 방법을 고민해보세요.</p>
+<p>좋습니다. 정답을 알려드릴게요.</p>
+<p>다음과 같이 코드를 작성할 수 있습니다.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token punctuation">{</span>
+ <span class="token string">"for-i loop"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">"prefix"</span><span class="token operator">:</span> <span class="token string">"fori"</span><span class="token punctuation">,</span>
+    <span class="token string">"scope"</span><span class="token operator">:</span> <span class="token string">"javascript, typescript"</span><span class="token punctuation">,</span>
+    <span class="token string">"body"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">"for(let i = 0; i &lt; $0; i++){"</span><span class="token punctuation">,</span>
+      <span class="token string">"}"</span>
+    <span class="token punctuation">]</span>
+ <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>gif 를 보세요.</p>
+<p><img src="https://miro.medium.com/max/1400/1*fI5PysT2CWV8pHcSB7s-aQ.gif" alt="vscode12"></p>
+<br>
+<p>네. 사용자 정의 스니펫을 사용하는 법을 알아봤습니다. 이 기능에 대해 많은 시간을 사용했는데, 왜냐하면 제가 가장 좋아하는 기능이기 때문이며 이 기능이 여러분들에게도 유용할 거라고 생각하기 때문입니다.</p>
+<p>예전엔, 중복되는 코드를 입력해야할 때, 다른 파일에서 복사해서 붙여넣는 매우 번거로운 방법을 사용했었습니다. 하지만 우린 이제 더 빠르게 코드를 작성할 수 있게 되었습니다.</p></section><hr/><footer><div class="bio"></div></footer></article><nav class="blog-post-nav"><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/2020-07-28-chrome_devtools/">← <!-- -->&lt;번역&gt;시니어 프론트엔드 개발자처럼 크롬 개발자도구 사용하기</a></li><li><a rel="next" href="/2020-11-17-repeat-yourself/">&lt;번역&gt;DRY가 먹히지 않으면, WET하게<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2021<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.com">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', '131311088', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2020-09-02-use_vscode_like_a_senior_developer/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-0eca59d2ee8c0828e3a6.js"],"app":["/app-e96b944a7c6af244c961.js"],"component---src-pages-404-js":["/component---src-pages-404-js-994c3193491059bf8b6b.js"],"component---src-pages-index-js":["/component---src-pages-index-js-5143a6c272517200ccdd.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-811c8e0cf309df5e3046.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-9d982ded75bfbb0a31d5.js"]};/*]]>*/</script><script src="/polyfill-0eca59d2ee8c0828e3a6.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-9d982ded75bfbb0a31d5.js" async=""></script><script src="/cd7d5f864fc9e15ed8adef086269b0aeff617554-1ca5ed2db9ab65ecd1e6.js" async=""></script><script src="/commons-d9dafa7b739cb27f2739.js" async=""></script><script src="/app-e96b944a7c6af244c961.js" async=""></script><script src="/styles-755093da0c07f4b49226.js" async=""></script><script src="/framework-e2d419ac45d8ae41957a.js" async=""></script><script src="/webpack-runtime-4a5b379df86961d8f96d.js" async=""></script></body></html>
