@@ -6,7 +6,7 @@ description: "이 글을 bitfish의 Use VSCode Like a Senior Developer을 번역
 
 > 이 글을 bitfish의 Use VSCode Like a Senior Developer을 번역한 글입니다.
 >
-> 원문은 [Use VSCode Like a Senior Developer](https://levelup.gitconnected.com/use-vscode-like-a-senior-developer-9b54054c452a){:target="\_blank"} 에서 확인하실 수 있습니다.
+> 원문은 [Use VSCode Like a Senior Developer](https://levelup.gitconnected.com/use-vscode-like-a-senior-developer-9b54054c452a) 에서 확인하실 수 있습니다.
 
 ![vscod1](./VSCode1.jpeg)
 
