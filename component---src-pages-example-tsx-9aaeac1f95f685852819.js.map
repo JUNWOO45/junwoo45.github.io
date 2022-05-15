@@ -1,1 +1,0 @@
-{"version":3,"file":"component---src-pages-example-tsx-9aaeac1f95f685852819.js","mappings":"kJAIA,UAFoB,kBAAmB","sources":["webpack://junwoo45.github.io/./src/pages/example.tsx"],"sourcesContent":["import React from \"react\";\n\nconst ExamplePage = (): JSX.Element => <h1>Sample content</h1>;\n\nexport default ExamplePage;\n"],"names":[],"sourceRoot":""}
