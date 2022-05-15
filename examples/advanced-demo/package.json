@@ -39,7 +39,7 @@
     "test:e2e:ci": "CYPRESS_SUPPORT=y npm run build && start-server-and-test serve http://localhost:9000 cy:run"
   },
   "dependencies": {
-    "gatsby": "^4.0.0",
+    "gatsby": "^4.14.0",
     "gatsby-plugin-image": "^2.0.0",
     "gatsby-plugin-mdx": "^3.0.0",
     "gatsby-theme-advanced": "*",
