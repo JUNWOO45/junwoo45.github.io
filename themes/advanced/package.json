@@ -113,7 +113,7 @@
     "markdownlint-cli2": "^0.3.2",
     "memfs": "^3.3.0",
     "prettier": "^2.4.1",
-    "react": "^17.0.2",
+    "react": "^18.1.0",
     "react-dom": "^17.0.2",
     "react-test-renderer": "^17.0.2",
     "stylelint": "^13.13.1",
@@ -127,7 +127,7 @@
   },
   "peerDependencies": {
     "gatsby": "*",
-    "react": "^17.0.2",
+    "react": "^18.1.0",
     "react-dom": "^17.0.2"
   },
   "keywords": [
