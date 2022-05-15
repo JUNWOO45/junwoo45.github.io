@@ -60,7 +60,7 @@
     "react-query": "^3.28.0",
     "react-share": "^4.4.0",
     "react-twitter-widgets": "^1.10.0",
-    "remark-codesandbox": "^0.10.0",
+    "remark-codesandbox": "^0.10.1",
     "remark-external-links": "^8.0.0",
     "remark-unwrap-images": "^2.1.0",
     "remove-markdown": "^0.3.0",
