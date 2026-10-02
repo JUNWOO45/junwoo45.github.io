@@ -37,7 +37,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
         </nav>
       </header>
       <main id="main"><slot /></main>
-      <footer><span>© {new Date().getFullYear()} Junwoo</span><div><a href="/rss.xml">RSS ↗</a><a href="https://github.com/JUNWOO45">GitHub ↗</a></div></footer>
+      <footer><div><a href="/rss.xml">RSS ↗</a><a href="https://github.com/JUNWOO45">GitHub ↗</a></div></footer>
     </div>
     <script>
       document.querySelector('#theme-toggle')?.addEventListener('click', () => {
