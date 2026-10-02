@@ -1,4 +1,4 @@
-# 준우의 기록
+# 박준우 블로그
 
 Astro 기반 Markdown 블로그. 주소: https://junwoo45.github.io
 예전 Jekyll/Gatsby 글은 이관하지 않았습니다.
