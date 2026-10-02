@@ -1,0 +1,16 @@
+---
+import Base from '../layouts/Base.astro';
+import { publishedPosts, formatDate } from '../lib/posts';
+const posts = await publishedPosts();
+---
+<Base>
+  <section class="intro">
+    <p class="eyebrow">JUNWOO'S JOURNAL</p>
+    <h1>배우고, 만들고,<br />생각한 것을 기록합니다<span class="accent">.</span></h1>
+    <p class="intro-text">조금씩 쌓아가는 나의 이야기.</p>
+  </section>
+  <section aria-labelledby="posts-title" class="posts-section">
+    <div class="section-heading"><h2 id="posts-title">모든 글</h2><span>{posts.length.toString().padStart(2, '0')}</span></div>
+    {posts.length ? <ul class="post-list">{posts.map(post => <li><a class="post-card" href={`/posts/${post.id}/`}><div><time datetime={post.data.date.toISOString()}>{formatDate(post.data.date)}</time><h3>{post.data.title}</h3><p>{post.data.description}</p><div class="tags">{post.data.tags.map(tag => <span>#{tag}</span>)}</div></div><span class="post-arrow" aria-hidden="true">↗</span></a></li>)}</ul> : <div class="empty-state"><span class="empty-mark" aria-hidden="true">✳</span><h3>새로운 기록을 준비하고 있어요.</h3><p>첫 번째 이야기는 곧 이곳에서 만나요.</p></div>}
+  </section>
+</Base>

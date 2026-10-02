@@ -1,0 +1,20 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { publishedPosts, formatDate } from '../../lib/posts';
+export async function getStaticPaths() {
+  return (await publishedPosts()).map(post => ({ params: { id: post.id }, props: { post } }));
+}
+const { post } = Astro.props;
+const { Content, headings } = await render(post);
+const toc = headings.filter(h => h.depth === 2 || h.depth === 3);
+---
+<Base title={post.data.title} description={post.data.description}>
+  <article class="article">
+    <a href="/" class="back-link">← 모든 글</a>
+    <header class="article-header"><time datetime={post.data.date.toISOString()}>{formatDate(post.data.date)}</time><h1>{post.data.title}</h1><p>{post.data.description}</p><div class="tags">{post.data.tags.map(tag => <span>#{tag}</span>)}</div>{post.data.updated && <small>수정 {formatDate(post.data.updated)}</small>}</header>
+    {toc.length > 0 && <details class="toc"><summary>목차</summary><ul>{toc.map(h => <li class:list={{ nested: h.depth === 3 }}><a href={`#${h.slug}`}>{h.text}</a></li>)}</ul></details>}
+    <div class="prose"><Content /></div>
+    <div class="article-end"><span aria-hidden="true">✳</span><a href="/">다른 기록 읽기 →</a></div>
+  </article>
+</Base>
